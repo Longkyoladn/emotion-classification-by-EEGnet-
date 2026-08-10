@@ -1,0 +1,10 @@
+.venv/
+.cache/
+data/raw/
+data/interim/
+data/processed/
+reports/audit/*.json
+reports/figures/
+__pycache__/
+*.py[cod]
+
