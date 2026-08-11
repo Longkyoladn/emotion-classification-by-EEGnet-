@@ -1,0 +1,23 @@
+{
+  "participant_rows_in_tsv": 55,
+  "unique_subjects_in_participants_tsv": 54,
+  "duplicate_participant_rows": 1,
+  "subject_directories": 40,
+  "subjects_with_behavior": 34,
+  "subjects_with_events": 40,
+  "subjects_with_materialized_raw_payload": 1,
+  "manifest_rows": 434,
+  "matched_trials": 365,
+  "event_only_trials": 67,
+  "behavior_only_trials": 2,
+  "fully_valid_labeled_trials": 343,
+  "validation_issue_counts": {
+    "missing_behavior_row": 67,
+    "missing_sampling_frequency": 22,
+    "missing_eeg_set": 22,
+    "missing_eeg_fdt": 22,
+    "missing_stimulus_event": 2,
+    "missing_valence_event": 1
+  },
+  "label_policy": "Continuous ratings preserved; no binary labels derived."
+}
