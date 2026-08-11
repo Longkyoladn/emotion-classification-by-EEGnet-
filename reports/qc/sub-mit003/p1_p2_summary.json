@@ -1,0 +1,189 @@
+{
+  "checkpoint": "P1_P2",
+  "subject": "sub-mit003",
+  "source_set": "sub-mit003/eeg/sub-mit003_task-Emotion_eeg.set",
+  "raw_file_unchanged": true,
+  "structure": {
+    "sampling_frequency_hz": 250.0,
+    "samples": 674090,
+    "recording_duration_seconds": 2696.356,
+    "channels_total": 132,
+    "channel_types_before_correction": {
+      "eeg": 132
+    },
+    "channel_types_after_correction": {
+      "eeg": 128,
+      "misc": 1,
+      "ecg": 1,
+      "emg": 2
+    },
+    "missing_expected_channels": [],
+    "unexpected_channels": [],
+    "montage_eeg_channels_with_positions": 128,
+    "manifest_trials": 11,
+    "structurally_valid_trials": 11,
+    "trial_bounds_valid": true,
+    "stimulus_annotations": 11,
+    "max_manifest_annotation_alignment_error_seconds": 0.004000472000029731
+  },
+  "raw_quality": {
+    "nonfinite_values_total": 0,
+    "global_std_uv_quantiles": {
+      "min": 47029.41263584475,
+      "q25": 50514.89038312938,
+      "median": 52848.07785424408,
+      "q75": 54141.68799234605,
+      "max": 94329.80532340414
+    },
+    "global_peak_to_peak_uv_quantiles": {
+      "min": 289208.74609375,
+      "q25": 633927.71875,
+      "median": 660583.984375,
+      "q75": 663343.2578125,
+      "max": 666316.3125
+    },
+    "sampled_local_std_uv_quantiles": {
+      "min": 38.176891935332705,
+      "q25": 190.30169451925377,
+      "median": 204.32161215166994,
+      "q75": 221.05056849168886,
+      "max": 3762.1753406254584
+    },
+    "sampled_local_peak_to_peak_uv_quantiles": {
+      "min": 201.11431751349937,
+      "q25": 644.7397217200685,
+      "median": 737.8817286099064,
+      "q75": 908.0925435430499,
+      "max": 11246.898867804926
+    },
+    "boundary_annotations": 2,
+    "line_noise_ratio_50hz_quantiles": {
+      "min": 1548.3182646759449,
+      "q25": 16748.693029561902,
+      "median": 24198.229827140014,
+      "q75": 41782.608481245334,
+      "max": 129643.71469838954
+    },
+    "median_channel_correlation_quantiles": {
+      "min": 0.24152589186601697,
+      "q25": 0.9849358930214305,
+      "median": 0.9901413314092191,
+      "q75": 0.9926263869061736,
+      "max": 0.9937636733161647
+    },
+    "suspect_channels_count": 24,
+    "suspect_channels": [
+      {
+        "channel": "E3",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E7",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E36",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E37",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E42",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E50",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier;low_correlation"
+      },
+      {
+        "channel": "E53",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E54",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E56",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier"
+      },
+      {
+        "channel": "E61",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E71",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E76",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E77",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E78",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E79",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E80",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E84",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E87",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E103",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier;low_correlation"
+      },
+      {
+        "channel": "E104",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E109",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E110",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E111",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E127",
+        "suspect_reasons": "peak_to_peak_outlier;low_correlation"
+      }
+    ],
+    "thresholds_are_provisional": true
+  },
+  "artifacts": {
+    "channel_metrics_csv": "channel_raw_qc.csv",
+    "raw_psd_figure": "raw_psd.png"
+  },
+  "operations_not_performed": [
+    "filtering",
+    "notch filtering",
+    "bad-channel marking",
+    "interpolation",
+    "re-referencing",
+    "ICA",
+    "trial rejection",
+    "label derivation"
+  ]
+}
