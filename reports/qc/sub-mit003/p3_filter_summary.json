@@ -1,0 +1,342 @@
+{
+  "checkpoint": "P3",
+  "subject": "sub-mit003",
+  "trials": 11,
+  "padding_seconds": 15.0,
+  "raw_file_unchanged": true,
+  "configurations": {
+    "raw": {
+      "notch": false,
+      "highpass": null,
+      "lowpass": null
+    },
+    "bandpass_0p5_45": {
+      "notch": false,
+      "highpass": 0.5,
+      "lowpass": 45.0
+    },
+    "notch50_bandpass_0p5_45": {
+      "notch": true,
+      "highpass": 0.5,
+      "lowpass": 45.0
+    },
+    "bandpass_0p5_40": {
+      "notch": false,
+      "highpass": 0.5,
+      "lowpass": 40.0
+    }
+  },
+  "results": [
+    {
+      "configuration": "raw",
+      "median_std_uv": 165.43577677790148,
+      "median_peak_to_peak_uv": 695.9942535194414,
+      "median_channel_correlation": 0.7669637348889243,
+      "median_line_noise_ratio_50hz": 21849.51408168194,
+      "median_edge_to_middle_rms_ratio": 1.0124093480975727,
+      "suspect_channels_count": 23,
+      "delta_1_4_power_uv2": 35.42884565503539,
+      "delta_1_4_retained_vs_raw": 1.0,
+      "theta_4_8_power_uv2": 10.426679681014857,
+      "theta_4_8_retained_vs_raw": 1.0,
+      "alpha_8_13_power_uv2": 16.693018921002015,
+      "alpha_8_13_retained_vs_raw": 1.0,
+      "beta_13_30_power_uv2": 10.674370563843038,
+      "beta_13_30_retained_vs_raw": 1.0,
+      "gamma_30_45_power_uv2": 4.778833589127394,
+      "gamma_30_45_retained_vs_raw": 1.0
+    },
+    {
+      "configuration": "bandpass_0p5_45",
+      "median_std_uv": 95.76951521756445,
+      "median_peak_to_peak_uv": 400.9034589734437,
+      "median_channel_correlation": 0.9578081986522511,
+      "median_line_noise_ratio_50hz": 18011.847390823677,
+      "median_edge_to_middle_rms_ratio": 0.9999879025455358,
+      "suspect_channels_count": 27,
+      "delta_1_4_power_uv2": 35.357133707355814,
+      "delta_1_4_retained_vs_raw": 0.9979758881116867,
+      "theta_4_8_power_uv2": 10.411619905244878,
+      "theta_4_8_retained_vs_raw": 0.99855564990671,
+      "alpha_8_13_power_uv2": 16.6458304948341,
+      "alpha_8_13_retained_vs_raw": 0.9971731640399362,
+      "beta_13_30_power_uv2": 10.657349796173946,
+      "beta_13_30_retained_vs_raw": 0.9984054546760119,
+      "gamma_30_45_power_uv2": 4.773381241882085,
+      "gamma_30_45_retained_vs_raw": 0.9988590631702025
+    },
+    {
+      "configuration": "notch50_bandpass_0p5_45",
+      "median_std_uv": 13.885435283904215,
+      "median_peak_to_peak_uv": 161.5414168773144,
+      "median_channel_correlation": 0.21129840737018507,
+      "median_line_noise_ratio_50hz": 0.8930541058667492,
+      "median_edge_to_middle_rms_ratio": 1.0555820390337005,
+      "suspect_channels_count": 2,
+      "delta_1_4_power_uv2": 35.36178712512525,
+      "delta_1_4_retained_vs_raw": 0.9981072335643368,
+      "theta_4_8_power_uv2": 10.412952823722762,
+      "theta_4_8_retained_vs_raw": 0.998683487197071,
+      "alpha_8_13_power_uv2": 16.647878688672435,
+      "alpha_8_13_retained_vs_raw": 0.9972958616686891,
+      "beta_13_30_power_uv2": 10.658813234483368,
+      "beta_13_30_retained_vs_raw": 0.9985425529995776,
+      "gamma_30_45_power_uv2": 4.77398082285006,
+      "gamma_30_45_retained_vs_raw": 0.998984529135232
+    },
+    {
+      "configuration": "bandpass_0p5_40",
+      "median_std_uv": 13.743443332178678,
+      "median_peak_to_peak_uv": 157.77718632957482,
+      "median_channel_correlation": 0.20508376822742772,
+      "median_line_noise_ratio_50hz": 4.714988738757954,
+      "median_edge_to_middle_rms_ratio": 1.0626420647753956,
+      "suspect_channels_count": 2,
+      "delta_1_4_power_uv2": 35.33011034826161,
+      "delta_1_4_retained_vs_raw": 0.9972131379121085,
+      "theta_4_8_power_uv2": 10.412504663602363,
+      "theta_4_8_retained_vs_raw": 0.9986405051419864,
+      "alpha_8_13_power_uv2": 16.6505770065949,
+      "alpha_8_13_retained_vs_raw": 0.9974575051638074,
+      "beta_13_30_power_uv2": 10.648769374687966,
+      "beta_13_30_retained_vs_raw": 0.997601620723025,
+      "gamma_30_45_power_uv2": 4.3460581230729245,
+      "gamma_30_45_retained_vs_raw": 0.9094391009891823
+    }
+  ],
+  "suspect_channels_by_configuration": {
+    "raw": [
+      {
+        "channel": "E7",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E31",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E37",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E42",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E50",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier"
+      },
+      {
+        "channel": "E53",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E54",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E55",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E56",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier"
+      },
+      {
+        "channel": "E61",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E63",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E79",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E80",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E87",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E103",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier;low_correlation"
+      },
+      {
+        "channel": "E104",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E105",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E107",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E108",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E110",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E111",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E115",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E127",
+        "suspect_reasons": "low_correlation"
+      }
+    ],
+    "bandpass_0p5_45": [
+      {
+        "channel": "E7",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E8",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E25",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E31",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E37",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E42",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E50",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier;low_correlation"
+      },
+      {
+        "channel": "E53",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E54",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E55",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E56",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E60",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E61",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E78",
+        "suspect_reasons": "variance_outlier"
+      },
+      {
+        "channel": "E79",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E80",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E87",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E103",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier;low_correlation"
+      },
+      {
+        "channel": "E104",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E105",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E108",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E109",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E110",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E111",
+        "suspect_reasons": "variance_outlier;low_correlation"
+      },
+      {
+        "channel": "E115",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E116",
+        "suspect_reasons": "low_correlation"
+      },
+      {
+        "channel": "E127",
+        "suspect_reasons": "low_correlation"
+      }
+    ],
+    "notch50_bandpass_0p5_45": [
+      {
+        "channel": "E50",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier"
+      },
+      {
+        "channel": "E103",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier"
+      }
+    ],
+    "bandpass_0p5_40": [
+      {
+        "channel": "E50",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier"
+      },
+      {
+        "channel": "E103",
+        "suspect_reasons": "variance_outlier;peak_to_peak_outlier"
+      }
+    ]
+  },
+  "operations_not_performed": [
+    "bad-channel marking",
+    "interpolation",
+    "re-referencing",
+    "ICA",
+    "trial rejection",
+    "saving filtered EEG",
+    "label derivation"
+  ]
+}
