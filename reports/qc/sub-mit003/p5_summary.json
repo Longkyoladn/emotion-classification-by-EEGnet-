@@ -1,0 +1,52 @@
+{
+  "checkpoint": "P5",
+  "subject": "sub-mit003",
+  "trials": 11,
+  "bad_channels_interpolated": [
+    "E50",
+    "E103"
+  ],
+  "interpolation_method": "MNE spherical spline",
+  "good_channel_validation_set": [
+    "E5",
+    "E18",
+    "E28",
+    "E41",
+    "E65",
+    "E83",
+    "E96",
+    "E116"
+  ],
+  "good_channel_validation": {
+    "tests": 88,
+    "median_correlation": 0.5587581016811963,
+    "q25_correlation": 0.20033427028931108,
+    "median_nrmse": 1.1498264921753012,
+    "q75_nrmse": 2.2624092605127237,
+    "median_band_power_relative_error": {
+      "delta": 0.9140841696358593,
+      "theta": 0.37710946636334514,
+      "alpha": 0.21134277536573842,
+      "beta": 0.38025658413099245,
+      "gamma": 0.3992246462736441
+    }
+  },
+  "interpolation_effect": {
+    "max_absolute_change_on_126_good_channels_uv": 0.0,
+    "E50_median_std_before_uv": 166.1015198937016,
+    "E50_median_std_after_uv": 14.087766037867285,
+    "E103_median_std_before_uv": 5518.149725659665,
+    "E103_median_std_after_uv": 9.931369128449846
+  },
+  "average_reference_effect": {
+    "common_mode_rms_before_uv": 8.53058893235813,
+    "common_mode_rms_after_uv": 0.2000425436433801
+  },
+  "raw_file_unchanged": true,
+  "operations_not_performed": [
+    "ICA",
+    "trial rejection",
+    "saving cleaned EEG",
+    "label derivation"
+  ]
+}
