@@ -1,0 +1,12 @@
+trial,pass,review,reject,total_windows,pass_fraction,review_fraction,reject_fraction,unrecoverable_integrity_error,exclude_primary,exclusion_reason,include_ablation,stimulus,valence,arousal,valence_label_fixed5,arousal_label_fixed5,quadrant_label_fixed5,valence_binary_eligible_fixed5,arousal_binary_eligible_fixed5,quadrant_label_eligible_fixed5,label_source,subject_relative_label_status
+1,2,27,0,29,0.06896551724137931,0.9310344827586207,0.0,False,True,pass_fraction_lt_0.30,True,neutral_1.mp4,6.0,5.0,high,ambiguous,ambiguous,True,False,False,self_report,derive_inside_training_fold
+2,4,22,3,29,0.13793103448275862,0.7586206896551724,0.10344827586206896,False,True,pass_fraction_lt_0.30,True,2.m4v,2.97,4.56,low,low,LVLA,True,True,True,self_report,derive_inside_training_fold
+3,2,25,2,29,0.06896551724137931,0.8620689655172413,0.06896551724137931,False,True,pass_fraction_lt_0.30,True,3.mp4,4.98,4.98,low,low,LVLA,True,True,True,self_report,derive_inside_training_fold
+4,7,22,0,29,0.2413793103448276,0.7586206896551724,0.0,False,True,pass_fraction_lt_0.30,True,24.mp4,2.03,4.59,low,low,LVLA,True,True,True,self_report,derive_inside_training_fold
+5,8,21,0,29,0.27586206896551724,0.7241379310344828,0.0,False,True,pass_fraction_lt_0.30,True,neutral_2.mp4,4.98,4.04,low,low,LVLA,True,True,True,self_report,derive_inside_training_fold
+6,4,21,4,29,0.13793103448275862,0.7241379310344828,0.13793103448275862,False,True,pass_fraction_lt_0.30,True,5.mp4,2.05,4.21,low,low,LVLA,True,True,True,self_report,derive_inside_training_fold
+7,8,21,0,29,0.27586206896551724,0.7241379310344828,0.0,False,True,pass_fraction_lt_0.30,True,9.m4v,5.04,7.14,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+8,2,25,2,29,0.06896551724137931,0.8620689655172413,0.06896551724137931,False,True,pass_fraction_lt_0.30,True,7.mp4,2.99,7.95,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+9,1,24,4,29,0.034482758620689655,0.8275862068965517,0.13793103448275862,False,True,pass_fraction_lt_0.30,True,15.mp4,4.05,5.71,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+10,4,25,0,29,0.13793103448275862,0.8620689655172413,0.0,False,True,pass_fraction_lt_0.30,True,8.m4v,7.99,7.03,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+11,1,26,2,29,0.034482758620689655,0.896551724137931,0.06896551724137931,False,True,pass_fraction_lt_0.30,True,4.mp4,1.0,6.97,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold

@@ -1,0 +1,42 @@
+{
+  "checkpoint": "P10_curation",
+  "subject": "sub-mit121",
+  "physical_eeg_files_deleted_or_modified": false,
+  "primary_dataset": {
+    "trials": 11,
+    "all_windows_before_qc_selection": 319,
+    "included_pass_windows": 269,
+    "review_windows_ablation_only": 50,
+    "rejected_windows": 0
+  },
+  "excluded_trials": [],
+  "excluded_trial_windows_retained_for_analysis": 0,
+  "excluded_trial_pass_review_windows_available_for_explicit_ablation": 0,
+  "trial_exclusion_rules": {
+    "pass_fraction_lt": 0.3,
+    "reject_fraction_gte": 0.2,
+    "unrecoverable_integrity_errors": [
+      "nonfinite",
+      "wrong_channel_count",
+      "too_short"
+    ],
+    "computed_on": "4-second windows with 50% overlap"
+  },
+  "window_policy": {
+    "pass": "primary_dataset",
+    "review": "pass_plus_review_ablation_only",
+    "reject": "excluded_from_all_train_validation_test_sets"
+  },
+  "label_policy": {
+    "source": "self_report_valence_arousal",
+    "fixed5": "primary",
+    "fixed_threshold": 5.0,
+    "score_gt_threshold": "high",
+    "score_lt_threshold": "low",
+    "score_eq_threshold": "ambiguous_excluded_for_corresponding_task",
+    "subject_relative": "ablation_only; thresholds fitted on training trials inside each fold",
+    "video_name_used_as_ground_truth": false
+  },
+  "split_policy": "group by trial; overlapping windows are never split independently",
+  "rules_file": "configs/dens_rules.json"
+}

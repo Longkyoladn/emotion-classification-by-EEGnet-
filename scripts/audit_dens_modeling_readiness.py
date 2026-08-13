@@ -4,7 +4,6 @@ This audit never edits EEG or P9/P10 curation outputs. It verifies the locked
 eight-subject cohort and writes a subject-level CSV plus a machine-readable
 summary for the next split-design checkpoint.
 """
-
 from __future__ import annotations
 
 import argparse

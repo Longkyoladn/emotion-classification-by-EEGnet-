@@ -1,0 +1,11 @@
+trial,pass,review,reject,total_windows,pass_fraction,review_fraction,reject_fraction,unrecoverable_integrity_error,exclude_primary,exclusion_reason,include_ablation,stimulus,valence,arousal,valence_label_fixed5,arousal_label_fixed5,quadrant_label_fixed5,valence_binary_eligible_fixed5,arousal_binary_eligible_fixed5,quadrant_label_eligible_fixed5,label_source,subject_relative_label_status
+1,11,15,3,29,0.3793103448275862,0.5172413793103449,0.10344827586206896,False,False,,True,neutral_1.mp4,4.92,4.94,low,low,LVLA,True,True,True,self_report,derive_inside_training_fold
+2,15,11,3,29,0.5172413793103449,0.3793103448275862,0.10344827586206896,False,False,,True,17.mp4,1.03,8.92,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+3,19,10,0,29,0.6551724137931034,0.3448275862068966,0.0,False,False,,True,23.mp4,8.97,5.02,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+4,29,0,0,29,1.0,0.0,0.0,False,False,,True,1.mp4,1.05,9.0,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+5,24,4,1,29,0.8275862068965517,0.13793103448275862,0.034482758620689655,False,False,,True,8.m4v,7.93,7.06,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+6,14,13,2,29,0.4827586206896552,0.4482758620689655,0.06896551724137931,False,False,,True,neutral_2.mp4,1.0,7.18,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+7,10,16,3,29,0.3448275862068966,0.5517241379310345,0.10344827586206896,False,False,,True,3.mp4,8.05,5.08,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+8,27,2,0,29,0.9310344827586207,0.06896551724137931,0.0,False,False,,True,4.mp4,1.0,6.93,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+9,11,18,0,29,0.3793103448275862,0.6206896551724138,0.0,False,False,,True,28.mp4,5.0,1.0,ambiguous,low,ambiguous,False,True,False,self_report,derive_inside_training_fold
+10,21,8,0,29,0.7241379310344828,0.27586206896551724,0.0,False,False,,True,6.mp4,8.05,9.0,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold

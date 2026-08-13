@@ -1,0 +1,84 @@
+{
+  "recordings_in_integrity_audit": 38,
+  "integrity_pass_subjects": [
+    "sub-mit003",
+    "sub-mit004",
+    "sub-mit061",
+    "sub-mit076",
+    "sub-mit117",
+    "sub-mit121",
+    "sub-mit123",
+    "sub-mitb2017007"
+  ],
+  "integrity_fail_subjects": [
+    "sub-mit007",
+    "sub-mit014",
+    "sub-mit017",
+    "sub-mit022",
+    "sub-mit023",
+    "sub-mit024",
+    "sub-mit032",
+    "sub-mit035",
+    "sub-mit039",
+    "sub-mit040",
+    "sub-mit051",
+    "sub-mit052",
+    "sub-mit054",
+    "sub-mit067",
+    "sub-mit072",
+    "sub-mit074",
+    "sub-mit079",
+    "sub-mit080",
+    "sub-mit082",
+    "sub-mit096",
+    "sub-mit097",
+    "sub-mit099",
+    "sub-mit104",
+    "sub-mit106",
+    "sub-mit107",
+    "sub-mit111",
+    "sub-mit113",
+    "sub-mit114",
+    "sub-mit116",
+    "sub-mit122"
+  ],
+  "fully_curated_subjects": [
+    "sub-mit003",
+    "sub-mit004",
+    "sub-mit061",
+    "sub-mit076",
+    "sub-mit117",
+    "sub-mit121",
+    "sub-mit123",
+    "sub-mitb2017007"
+  ],
+  "fully_curated_count": 8,
+  "cohort_totals": {
+    "matched_trials": 87,
+    "primary_trials": 60,
+    "all_windows": 2523,
+    "primary_pass_windows": 1213,
+    "review_ablation_windows": 475,
+    "reject_windows": 99
+  },
+  "primary_label_totals": {
+    "arousal_binary": {
+      "high": 879,
+      "low": 334
+    },
+    "quadrant": {
+      "HVHA": 396,
+      "HVLA": 75,
+      "LVHA": 457,
+      "LVLA": 227,
+      "ambiguous": 58
+    },
+    "valence_binary": {
+      "ambiguous": 58,
+      "high": 471,
+      "low": 684
+    }
+  },
+  "raw_or_cleaned_eeg_deleted": false,
+  "integrity_policy": "SET/FDT size mismatch subjects are excluded; no truncation, zero-padding, or fabricated samples"
+}

@@ -1,0 +1,12 @@
+trial,pass,review,reject,total_windows,pass_fraction,review_fraction,reject_fraction,unrecoverable_integrity_error,exclude_primary,exclusion_reason,include_ablation,stimulus,valence,arousal,valence_label_fixed5,arousal_label_fixed5,quadrant_label_fixed5,valence_binary_eligible_fixed5,arousal_binary_eligible_fixed5,quadrant_label_eligible_fixed5,label_source,subject_relative_label_status
+1,25,4,0,29,0.8620689655172413,0.13793103448275862,0.0,False,False,,True,neutral_1.mp4,7.01,7.04,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+2,25,4,0,29,0.8620689655172413,0.13793103448275862,0.0,False,False,,True,12.m4v,8.74,8.2,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+3,26,3,0,29,0.896551724137931,0.10344827586206896,0.0,False,False,,True,5.mp4,4.02,6.04,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+4,20,9,0,29,0.6896551724137931,0.3103448275862069,0.0,False,False,,True,15.mp4,4.98,5.91,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+5,27,2,0,29,0.9310344827586207,0.06896551724137931,0.0,False,False,,True,24.mp4,1.95,7.03,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+6,24,5,0,29,0.8275862068965517,0.1724137931034483,0.0,False,False,,True,neutral_2.mp4,5.27,5.33,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+7,22,7,0,29,0.7586206896551724,0.2413793103448276,0.0,False,False,,True,27.mp4,2.03,3.01,low,low,LVLA,True,True,True,self_report,derive_inside_training_fold
+8,25,4,0,29,0.8620689655172413,0.13793103448275862,0.0,False,False,,True,3.mp4,7.91,5.04,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
+9,26,3,0,29,0.896551724137931,0.10344827586206896,0.0,False,False,,True,2.m4v,1.55,4.96,low,low,LVLA,True,True,True,self_report,derive_inside_training_fold
+10,27,2,0,29,0.9310344827586207,0.06896551724137931,0.0,False,False,,True,16.mp4,2.07,5.96,low,high,LVHA,True,True,True,self_report,derive_inside_training_fold
+11,22,7,0,29,0.7586206896551724,0.2413793103448276,0.0,False,False,,True,1.mp4,5.96,7.06,high,high,HVHA,True,True,True,self_report,derive_inside_training_fold
