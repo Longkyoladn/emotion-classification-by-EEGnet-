@@ -8,3 +8,5 @@ reports/figures/
 __pycache__/
 *.py[cod]
 
+reports/
+docs/

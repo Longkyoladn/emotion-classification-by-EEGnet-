@@ -84,15 +84,16 @@ def main() -> None:
         counts = group["flags"].str.split(";").explode().replace("", np.nan).dropna().value_counts()
         flagged_trials = int(group.flagged.sum())
         independent_metrics = int(sum(counts.get(k, 0) > 0 for k in ["variance", "peak_to_peak", "global_correlation", "neighbor_correlation"]))
-        if flagged_trials >= 6 and independent_metrics >= 2:
+        flagged_fraction = flagged_trials / len(trials)
+        if flagged_fraction >= 0.50 and independent_metrics >= 2:
             decision = "bad"
-        elif flagged_trials >= 3 or independent_metrics >= 2:
+        elif flagged_fraction >= 0.25 or independent_metrics >= 2:
             decision = "review"
         else:
             decision = "pass"
         rows.append({
             "channel": channel, "decision": decision, "flagged_trials": flagged_trials,
-            "trial_fraction": flagged_trials / len(trials), "independent_metrics": independent_metrics,
+            "trial_fraction": flagged_fraction, "independent_metrics": independent_metrics,
             "variance_trials": int(counts.get("variance", 0)),
             "peak_to_peak_trials": int(counts.get("peak_to_peak", 0)),
             "global_correlation_trials": int(counts.get("global_correlation", 0)),
@@ -114,8 +115,8 @@ def main() -> None:
         "review": summary.loc[summary.decision.eq("review"), "channel"].tolist(),
         "pass_count": int(summary.decision.eq("pass").sum()),
         "decision_rule": {
-            "bad": "flagged in >=6/11 trials and by >=2 independent metrics",
-            "review": "flagged in >=3/11 trials or by >=2 independent metrics",
+            "bad": "flagged in >=50% of valid trials and by >=2 independent metrics",
+            "review": "flagged in >=25% of valid trials or by >=2 independent metrics",
         },
         "raw_file_unchanged": True,
         "operations_not_performed": ["interpolation", "re-referencing", "ICA", "trial rejection", "saving filtered EEG"],
