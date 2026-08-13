@@ -1,0 +1,44 @@
+{
+  "protocol": "single_class_sensitivity",
+  "task": "valence_binary_fixed5",
+  "training_subjects": [
+    "sub-mit003",
+    "sub-mit004",
+    "sub-mit061",
+    "sub-mit076",
+    "sub-mit121",
+    "sub-mit123"
+  ],
+  "sensitivity_subjects": [
+    "sub-mit117"
+  ],
+  "descriptive_only": true,
+  "subject_relative_labels_allowed": false,
+  "leakage_free": true,
+  "partitions": {
+    "refit": {
+      "windows": 1146,
+      "trials": 56,
+      "subjects": 6,
+      "window_labels": {
+        "high": 471,
+        "low": 675
+      },
+      "trial_labels": {
+        "high": 24,
+        "low": 32
+      }
+    },
+    "sensitivity_test": {
+      "windows": 9,
+      "trials": 1,
+      "subjects": 1,
+      "window_labels": {
+        "low": 9
+      },
+      "trial_labels": {
+        "low": 1
+      }
+    }
+  }
+}

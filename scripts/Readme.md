@@ -8,8 +8,9 @@ lập, kiểm soát chất lượng rõ ràng và không gây data leakage trư�
 các mô hình machine learning truyền thống với EEGNet.
 
 > Trạng thái hiện tại: dữ liệu đã hoàn tất preprocessing và curation P1–P10.
-> Dataset chưa được đóng gói thành tensor/DataLoader và chưa tạo split chính
-> thức cho quá trình huấn luyện.
+> M2 đã tạo modeling index và ba protocol split chính thức cho valence binary:
+> subject-dependent, nested LOSO và personalization.
+> Dataset chưa được đóng gói thành tensor/DataLoader và chưa có vòng lặp huấn luyện.
 
 ## Phạm vi dữ liệu
 
@@ -384,6 +385,32 @@ Tổng hợp cohort và audit modeling-readiness:
 & $PYTHON scripts\audit_dens_modeling_readiness.py
 ```
 
+### Tạo modeling index và split M2
+
+Logic modeling nằm trong `src/eeg_emotion/data/`; script dưới đây chỉ là CLI
+entrypoint:
+
+```powershell
+& $PYTHON scripts\prepare_modeling_splits.py `
+  --config configs\modeling_m2_v1.0.2.json
+```
+
+Đầu ra được lưu trong `data/modeling/` và gồm:
+
+- Modeling index có 1.213 primary-pass window; 1.155 window/57 trial đủ điều kiện
+  fixed-5 valence. Sáu subject chính đóng góp 1.146 window/56 trial.
+- Subject-dependent: 10 lần lặp stratified 2-fold theo trial cho từng subject.
+- Cross-subject: 6 outer LOSO fold. Mỗi outer fold có 5 inner subject fold để chọn
+  hyperparameter, sau đó refit trên toàn bộ 5 outer-training subject trước khi test.
+- Personalization: pretrain trên 5 subject khác và liệt kê toàn bộ 114 lựa chọn
+  calibration gồm một trial High và một trial Low của target subject.
+- Sensitivity: refit trên 6 subject chính và test mô tả trên 9 window Low duy nhất
+  của `sub-mit117`. `sub-mitb2017007` không tham gia modeling.
+
+Subject-relative label chỉ xuất hiện trong manifest subject-dependent và
+personalization. Median được tính từ training trial hoặc calibration trial tương
+ứng; nested LOSO zero-shot và sensitivity không chứa subject-relative label.
+
 ## Phân bố nhãn primary hiện tại
 
 | Task | Eligible trial | Primary window | Phân bố trial |
@@ -399,13 +426,11 @@ Arousal binary và four-quadrant được giữ làm thí nghiệm phụ.
 
 Pipeline preprocessing đã hoàn tất, nhưng còn các bước modeling sau:
 
-1. Tạo split train/validation/test chống leakage.
-2. Kiểm tra từng fold có đủ lớp.
-3. Tạo Dataset/DataLoader từ các cleaned trial FIF.
-4. Fit normalization chỉ trên training partition.
-5. Trích xuất band-power hoặc Riemannian feature cho baseline truyền thống.
-6. Huấn luyện và so sánh subject-dependent, LOSO và personalization.
-7. Chạy ablation `pass-only` với `pass + review`.
+1. Tạo Dataset/DataLoader từ các cleaned trial FIF và modeling index M2.
+2. Fit normalization chỉ trên training partition.
+3. Trích xuất band-power hoặc Riemannian feature cho baseline truyền thống.
+4. Huấn luyện và so sánh subject-dependent, LOSO và personalization.
+5. Chạy ablation `pass-only` với `pass + review`.
 
 Không được split ngẫu nhiên theo window vì các window overlap và các window của
 cùng một trial không phải những quan sát độc lập.
@@ -414,14 +439,18 @@ cùng một trial không phải những quan sát độc lập.
 
 ```text
 configs/
-  dens_rules.json             Rule preprocessing, QC, label và split
+  dens_rules.json             Rule preprocessing, QC và label
+  modeling_m2_v1.0.2.json     Cấu hình modeling index và ba protocol M2
 data/
   raw/                        DENS raw EEG, không đưa lên Git
   manifest/                   Mapping subject/trial/event/self-report
   processed/                  Cleaned FIF theo trial, không đưa lên Git
+  modeling/                   Modeling index, split manifest và audit M2
 reports/
   qc/<subject>/               CSV, JSON, ICA và figure theo checkpoint
-scripts/                      Toàn bộ pipeline phân tích và xử lý
+src/eeg_emotion/              Logic data/modeling có thể import và kiểm thử
+scripts/                      CLI entrypoint cho preprocessing và modeling
+tests/                        Kiểm thử invariant chống leakage
 ```
 
 Raw data, processed EEG, báo cáo QC và tài liệu nội bộ được kiểm soát bằng

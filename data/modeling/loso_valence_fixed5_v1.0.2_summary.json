@@ -1,0 +1,1330 @@
+{
+  "protocol": "cross_subject_nested_loso",
+  "task": "valence_binary_fixed5",
+  "subjects": [
+    "sub-mit003",
+    "sub-mit004",
+    "sub-mit061",
+    "sub-mit076",
+    "sub-mit121",
+    "sub-mit123"
+  ],
+  "outer_folds": 6,
+  "inner_subject_folds_per_outer_fold": 5,
+  "hyperparameter_selection_stage": "inner_selection",
+  "final_training_stage": "outer_evaluation/refit",
+  "subject_relative_labels_allowed": false,
+  "all_inner_folds_exclude_outer_test": true,
+  "all_folds_leakage_free": true,
+  "all_folds_class_complete": true,
+  "folds": [
+    {
+      "outer_fold": 1,
+      "test_subject": "sub-mit003",
+      "refit_subjects": [
+        "sub-mit004",
+        "sub-mit061",
+        "sub-mit076",
+        "sub-mit121",
+        "sub-mit123"
+      ],
+      "inner_folds": [
+        {
+          "inner_fold": 1,
+          "validation_subject": "sub-mit004",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 855,
+              "trials": 39,
+              "subjects": 4,
+              "window_labels": {
+                "high": 362,
+                "low": 493
+              },
+              "trial_labels": {
+                "high": 18,
+                "low": 21
+              }
+            },
+            "validation": {
+              "windows": 82,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 2,
+          "validation_subject": "sub-mit061",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 767,
+              "trials": 37,
+              "subjects": 4,
+              "window_labels": {
+                "high": 262,
+                "low": 505
+              },
+              "trial_labels": {
+                "high": 13,
+                "low": 24
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 124,
+                "low": 46
+              },
+              "trial_labels": {
+                "high": 7,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 3,
+          "validation_subject": "sub-mit076",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 767,
+              "trials": 37,
+              "subjects": 4,
+              "window_labels": {
+                "high": 312,
+                "low": 455
+              },
+              "trial_labels": {
+                "high": 16,
+                "low": 21
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 96
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 4,
+          "validation_subject": "sub-mit121",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 668,
+              "trials": 35,
+              "subjects": 4,
+              "window_labels": {
+                "high": 265,
+                "low": 403
+              },
+              "trial_labels": {
+                "high": 15,
+                "low": 20
+              }
+            },
+            "validation": {
+              "windows": 269,
+              "trials": 11,
+              "subjects": 1,
+              "window_labels": {
+                "high": 121,
+                "low": 148
+              },
+              "trial_labels": {
+                "high": 5,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 5,
+          "validation_subject": "sub-mit123",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 691,
+              "trials": 36,
+              "subjects": 4,
+              "window_labels": {
+                "high": 343,
+                "low": 348
+              },
+              "trial_labels": {
+                "high": 18,
+                "low": 18
+              }
+            },
+            "validation": {
+              "windows": 246,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 203
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 8
+              }
+            }
+          }
+        }
+      ],
+      "outer_leakage_free": true,
+      "outer_partitions_have_two_classes": true,
+      "outer_partitions": {
+        "refit": {
+          "windows": 937,
+          "trials": 46,
+          "subjects": 5,
+          "window_labels": {
+            "high": 386,
+            "low": 551
+          },
+          "trial_labels": {
+            "high": 20,
+            "low": 26
+          }
+        },
+        "test": {
+          "windows": 209,
+          "trials": 10,
+          "subjects": 1,
+          "window_labels": {
+            "high": 85,
+            "low": 124
+          },
+          "trial_labels": {
+            "high": 4,
+            "low": 6
+          }
+        }
+      }
+    },
+    {
+      "outer_fold": 2,
+      "test_subject": "sub-mit004",
+      "refit_subjects": [
+        "sub-mit003",
+        "sub-mit061",
+        "sub-mit076",
+        "sub-mit121",
+        "sub-mit123"
+      ],
+      "inner_folds": [
+        {
+          "inner_fold": 1,
+          "validation_subject": "sub-mit003",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 855,
+              "trials": 39,
+              "subjects": 4,
+              "window_labels": {
+                "high": 362,
+                "low": 493
+              },
+              "trial_labels": {
+                "high": 18,
+                "low": 21
+              }
+            },
+            "validation": {
+              "windows": 209,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 85,
+                "low": 124
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 2,
+          "validation_subject": "sub-mit061",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 894,
+              "trials": 40,
+              "subjects": 4,
+              "window_labels": {
+                "high": 323,
+                "low": 571
+              },
+              "trial_labels": {
+                "high": 15,
+                "low": 25
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 124,
+                "low": 46
+              },
+              "trial_labels": {
+                "high": 7,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 3,
+          "validation_subject": "sub-mit076",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 894,
+              "trials": 40,
+              "subjects": 4,
+              "window_labels": {
+                "high": 373,
+                "low": 521
+              },
+              "trial_labels": {
+                "high": 18,
+                "low": 22
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 96
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 4,
+          "validation_subject": "sub-mit121",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 795,
+              "trials": 38,
+              "subjects": 4,
+              "window_labels": {
+                "high": 326,
+                "low": 469
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 21
+              }
+            },
+            "validation": {
+              "windows": 269,
+              "trials": 11,
+              "subjects": 1,
+              "window_labels": {
+                "high": 121,
+                "low": 148
+              },
+              "trial_labels": {
+                "high": 5,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 5,
+          "validation_subject": "sub-mit123",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 818,
+              "trials": 39,
+              "subjects": 4,
+              "window_labels": {
+                "high": 404,
+                "low": 414
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 19
+              }
+            },
+            "validation": {
+              "windows": 246,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 203
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 8
+              }
+            }
+          }
+        }
+      ],
+      "outer_leakage_free": true,
+      "outer_partitions_have_two_classes": true,
+      "outer_partitions": {
+        "refit": {
+          "windows": 1064,
+          "trials": 49,
+          "subjects": 5,
+          "window_labels": {
+            "high": 447,
+            "low": 617
+          },
+          "trial_labels": {
+            "high": 22,
+            "low": 27
+          }
+        },
+        "test": {
+          "windows": 82,
+          "trials": 7,
+          "subjects": 1,
+          "window_labels": {
+            "high": 24,
+            "low": 58
+          },
+          "trial_labels": {
+            "high": 2,
+            "low": 5
+          }
+        }
+      }
+    },
+    {
+      "outer_fold": 3,
+      "test_subject": "sub-mit061",
+      "refit_subjects": [
+        "sub-mit003",
+        "sub-mit004",
+        "sub-mit076",
+        "sub-mit121",
+        "sub-mit123"
+      ],
+      "inner_folds": [
+        {
+          "inner_fold": 1,
+          "validation_subject": "sub-mit003",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 767,
+              "trials": 37,
+              "subjects": 4,
+              "window_labels": {
+                "high": 262,
+                "low": 505
+              },
+              "trial_labels": {
+                "high": 13,
+                "low": 24
+              }
+            },
+            "validation": {
+              "windows": 209,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 85,
+                "low": 124
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 2,
+          "validation_subject": "sub-mit004",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 894,
+              "trials": 40,
+              "subjects": 4,
+              "window_labels": {
+                "high": 323,
+                "low": 571
+              },
+              "trial_labels": {
+                "high": 15,
+                "low": 25
+              }
+            },
+            "validation": {
+              "windows": 82,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 3,
+          "validation_subject": "sub-mit076",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 806,
+              "trials": 38,
+              "subjects": 4,
+              "window_labels": {
+                "high": 273,
+                "low": 533
+              },
+              "trial_labels": {
+                "high": 13,
+                "low": 25
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 96
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 4,
+          "validation_subject": "sub-mit121",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 707,
+              "trials": 36,
+              "subjects": 4,
+              "window_labels": {
+                "high": 226,
+                "low": 481
+              },
+              "trial_labels": {
+                "high": 12,
+                "low": 24
+              }
+            },
+            "validation": {
+              "windows": 269,
+              "trials": 11,
+              "subjects": 1,
+              "window_labels": {
+                "high": 121,
+                "low": 148
+              },
+              "trial_labels": {
+                "high": 5,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 5,
+          "validation_subject": "sub-mit123",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 730,
+              "trials": 37,
+              "subjects": 4,
+              "window_labels": {
+                "high": 304,
+                "low": 426
+              },
+              "trial_labels": {
+                "high": 15,
+                "low": 22
+              }
+            },
+            "validation": {
+              "windows": 246,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 203
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 8
+              }
+            }
+          }
+        }
+      ],
+      "outer_leakage_free": true,
+      "outer_partitions_have_two_classes": true,
+      "outer_partitions": {
+        "refit": {
+          "windows": 976,
+          "trials": 47,
+          "subjects": 5,
+          "window_labels": {
+            "high": 347,
+            "low": 629
+          },
+          "trial_labels": {
+            "high": 17,
+            "low": 30
+          }
+        },
+        "test": {
+          "windows": 170,
+          "trials": 9,
+          "subjects": 1,
+          "window_labels": {
+            "high": 124,
+            "low": 46
+          },
+          "trial_labels": {
+            "high": 7,
+            "low": 2
+          }
+        }
+      }
+    },
+    {
+      "outer_fold": 4,
+      "test_subject": "sub-mit076",
+      "refit_subjects": [
+        "sub-mit003",
+        "sub-mit004",
+        "sub-mit061",
+        "sub-mit121",
+        "sub-mit123"
+      ],
+      "inner_folds": [
+        {
+          "inner_fold": 1,
+          "validation_subject": "sub-mit003",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 767,
+              "trials": 37,
+              "subjects": 4,
+              "window_labels": {
+                "high": 312,
+                "low": 455
+              },
+              "trial_labels": {
+                "high": 16,
+                "low": 21
+              }
+            },
+            "validation": {
+              "windows": 209,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 85,
+                "low": 124
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 2,
+          "validation_subject": "sub-mit004",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 894,
+              "trials": 40,
+              "subjects": 4,
+              "window_labels": {
+                "high": 373,
+                "low": 521
+              },
+              "trial_labels": {
+                "high": 18,
+                "low": 22
+              }
+            },
+            "validation": {
+              "windows": 82,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 3,
+          "validation_subject": "sub-mit061",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 806,
+              "trials": 38,
+              "subjects": 4,
+              "window_labels": {
+                "high": 273,
+                "low": 533
+              },
+              "trial_labels": {
+                "high": 13,
+                "low": 25
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 124,
+                "low": 46
+              },
+              "trial_labels": {
+                "high": 7,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 4,
+          "validation_subject": "sub-mit121",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 707,
+              "trials": 36,
+              "subjects": 4,
+              "window_labels": {
+                "high": 276,
+                "low": 431
+              },
+              "trial_labels": {
+                "high": 15,
+                "low": 21
+              }
+            },
+            "validation": {
+              "windows": 269,
+              "trials": 11,
+              "subjects": 1,
+              "window_labels": {
+                "high": 121,
+                "low": 148
+              },
+              "trial_labels": {
+                "high": 5,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 5,
+          "validation_subject": "sub-mit123",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 730,
+              "trials": 37,
+              "subjects": 4,
+              "window_labels": {
+                "high": 354,
+                "low": 376
+              },
+              "trial_labels": {
+                "high": 18,
+                "low": 19
+              }
+            },
+            "validation": {
+              "windows": 246,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 203
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 8
+              }
+            }
+          }
+        }
+      ],
+      "outer_leakage_free": true,
+      "outer_partitions_have_two_classes": true,
+      "outer_partitions": {
+        "refit": {
+          "windows": 976,
+          "trials": 47,
+          "subjects": 5,
+          "window_labels": {
+            "high": 397,
+            "low": 579
+          },
+          "trial_labels": {
+            "high": 20,
+            "low": 27
+          }
+        },
+        "test": {
+          "windows": 170,
+          "trials": 9,
+          "subjects": 1,
+          "window_labels": {
+            "high": 74,
+            "low": 96
+          },
+          "trial_labels": {
+            "high": 4,
+            "low": 5
+          }
+        }
+      }
+    },
+    {
+      "outer_fold": 5,
+      "test_subject": "sub-mit121",
+      "refit_subjects": [
+        "sub-mit003",
+        "sub-mit004",
+        "sub-mit061",
+        "sub-mit076",
+        "sub-mit123"
+      ],
+      "inner_folds": [
+        {
+          "inner_fold": 1,
+          "validation_subject": "sub-mit003",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 668,
+              "trials": 35,
+              "subjects": 4,
+              "window_labels": {
+                "high": 265,
+                "low": 403
+              },
+              "trial_labels": {
+                "high": 15,
+                "low": 20
+              }
+            },
+            "validation": {
+              "windows": 209,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 85,
+                "low": 124
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 2,
+          "validation_subject": "sub-mit004",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 795,
+              "trials": 38,
+              "subjects": 4,
+              "window_labels": {
+                "high": 326,
+                "low": 469
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 21
+              }
+            },
+            "validation": {
+              "windows": 82,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 3,
+          "validation_subject": "sub-mit061",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 707,
+              "trials": 36,
+              "subjects": 4,
+              "window_labels": {
+                "high": 226,
+                "low": 481
+              },
+              "trial_labels": {
+                "high": 12,
+                "low": 24
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 124,
+                "low": 46
+              },
+              "trial_labels": {
+                "high": 7,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 4,
+          "validation_subject": "sub-mit076",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 707,
+              "trials": 36,
+              "subjects": 4,
+              "window_labels": {
+                "high": 276,
+                "low": 431
+              },
+              "trial_labels": {
+                "high": 15,
+                "low": 21
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 96
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 5,
+          "validation_subject": "sub-mit123",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 631,
+              "trials": 35,
+              "subjects": 4,
+              "window_labels": {
+                "high": 307,
+                "low": 324
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 18
+              }
+            },
+            "validation": {
+              "windows": 246,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 203
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 8
+              }
+            }
+          }
+        }
+      ],
+      "outer_leakage_free": true,
+      "outer_partitions_have_two_classes": true,
+      "outer_partitions": {
+        "refit": {
+          "windows": 877,
+          "trials": 45,
+          "subjects": 5,
+          "window_labels": {
+            "high": 350,
+            "low": 527
+          },
+          "trial_labels": {
+            "high": 19,
+            "low": 26
+          }
+        },
+        "test": {
+          "windows": 269,
+          "trials": 11,
+          "subjects": 1,
+          "window_labels": {
+            "high": 121,
+            "low": 148
+          },
+          "trial_labels": {
+            "high": 5,
+            "low": 6
+          }
+        }
+      }
+    },
+    {
+      "outer_fold": 6,
+      "test_subject": "sub-mit123",
+      "refit_subjects": [
+        "sub-mit003",
+        "sub-mit004",
+        "sub-mit061",
+        "sub-mit076",
+        "sub-mit121"
+      ],
+      "inner_folds": [
+        {
+          "inner_fold": 1,
+          "validation_subject": "sub-mit003",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 691,
+              "trials": 36,
+              "subjects": 4,
+              "window_labels": {
+                "high": 343,
+                "low": 348
+              },
+              "trial_labels": {
+                "high": 18,
+                "low": 18
+              }
+            },
+            "validation": {
+              "windows": 209,
+              "trials": 10,
+              "subjects": 1,
+              "window_labels": {
+                "high": 85,
+                "low": 124
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 6
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 2,
+          "validation_subject": "sub-mit004",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 818,
+              "trials": 39,
+              "subjects": 4,
+              "window_labels": {
+                "high": 404,
+                "low": 414
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 19
+              }
+            },
+            "validation": {
+              "windows": 82,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 3,
+          "validation_subject": "sub-mit061",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 730,
+              "trials": 37,
+              "subjects": 4,
+              "window_labels": {
+                "high": 304,
+                "low": 426
+              },
+              "trial_labels": {
+                "high": 15,
+                "low": 22
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 124,
+                "low": 46
+              },
+              "trial_labels": {
+                "high": 7,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 4,
+          "validation_subject": "sub-mit076",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 730,
+              "trials": 37,
+              "subjects": 4,
+              "window_labels": {
+                "high": 354,
+                "low": 376
+              },
+              "trial_labels": {
+                "high": 18,
+                "low": 19
+              }
+            },
+            "validation": {
+              "windows": 170,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 96
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "inner_fold": 5,
+          "validation_subject": "sub-mit121",
+          "test_subject_absent": true,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "partitions": {
+            "train": {
+              "windows": 631,
+              "trials": 35,
+              "subjects": 4,
+              "window_labels": {
+                "high": 307,
+                "low": 324
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 18
+              }
+            },
+            "validation": {
+              "windows": 269,
+              "trials": 11,
+              "subjects": 1,
+              "window_labels": {
+                "high": 121,
+                "low": 148
+              },
+              "trial_labels": {
+                "high": 5,
+                "low": 6
+              }
+            }
+          }
+        }
+      ],
+      "outer_leakage_free": true,
+      "outer_partitions_have_two_classes": true,
+      "outer_partitions": {
+        "refit": {
+          "windows": 900,
+          "trials": 46,
+          "subjects": 5,
+          "window_labels": {
+            "high": 428,
+            "low": 472
+          },
+          "trial_labels": {
+            "high": 22,
+            "low": 24
+          }
+        },
+        "test": {
+          "windows": 246,
+          "trials": 10,
+          "subjects": 1,
+          "window_labels": {
+            "high": 43,
+            "low": 203
+          },
+          "trial_labels": {
+            "high": 2,
+            "low": 8
+          }
+        }
+      }
+    }
+  ]
+}

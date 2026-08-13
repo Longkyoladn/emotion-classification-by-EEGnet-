@@ -1,0 +1,73 @@
+{
+  "dataset": {
+    "name": "DENS",
+    "openneuro_id": "ds003751",
+    "snapshot": "1.0.2",
+    "snapshot_git_commit": "a91a171487f847bfe9404a13237cc2a397558e9b",
+    "allow_other_snapshots": false
+  },
+  "paths": {
+    "dataset_root": "data/raw/ds003751",
+    "trial_manifest": "data/manifest/dens_trials.csv",
+    "subject_manifest": "data/manifest/dens_subjects.csv",
+    "integrity_report": "reports/dens_eeglab_integrity.csv",
+    "qc_root": "reports/qc",
+    "processed_root": "data/processed"
+  },
+  "subjects": {
+    "integrity_pass_locked": [
+      "sub-mit003",
+      "sub-mit004",
+      "sub-mit061",
+      "sub-mit076",
+      "sub-mit117",
+      "sub-mit121",
+      "sub-mit123",
+      "sub-mitb2017007"
+    ],
+    "default_processing": [
+      "sub-mit004",
+      "sub-mit061",
+      "sub-mit076",
+      "sub-mit117",
+      "sub-mit121",
+      "sub-mit123",
+      "sub-mitb2017007"
+    ],
+    "pilot": [
+      "sub-mit003"
+    ],
+    "modeling_primary": [
+      "sub-mit003",
+      "sub-mit004",
+      "sub-mit061",
+      "sub-mit076",
+      "sub-mit121",
+      "sub-mit123"
+    ],
+    "sensitivity_only": [
+      "sub-mit117"
+    ],
+    "qc_only": [
+      "sub-mitb2017007"
+    ]
+  },
+  "expected_fdt_bytes": {
+    "sub-mit003": 355919520,
+    "sub-mit004": 227318256,
+    "sub-mit061": 180498912,
+    "sub-mit076": 256348224,
+    "sub-mit117": 328619808,
+    "sub-mit121": 263898096,
+    "sub-mit123": 174915840,
+    "sub-mitb2017007": 206491824
+  },
+  "modeling": {
+    "primary_task": "valence_binary_fixed5",
+    "primary_window_status": "pass",
+    "review_usage": "ablation_only",
+    "reject_usage": "excluded_from_all_splits",
+    "within_subject_group": "trial",
+    "cross_subject_group": "subject"
+  }
+}

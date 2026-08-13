@@ -1,0 +1,5811 @@
+{
+  "protocol": "personalization_high_low_calibration",
+  "task": "valence_binary_fixed5",
+  "subjects": [
+    "sub-mit003",
+    "sub-mit004",
+    "sub-mit061",
+    "sub-mit076",
+    "sub-mit121",
+    "sub-mit123"
+  ],
+  "calibration_strategy": "all_high_trial_x_low_trial_pairs",
+  "source_subject_relative_threshold_source": "all_pretraining_trials_per_subject",
+  "target_subject_relative_threshold_source": "two_calibration_trials_only",
+  "total_calibration_scenarios": 114,
+  "all_scenarios_leakage_free": true,
+  "all_calibrations_have_one_trial_per_class": true,
+  "all_tests_have_two_classes": true,
+  "target_summaries": [
+    {
+      "target_subject": "sub-mit003",
+      "pretrain_subjects": [
+        "sub-mit004",
+        "sub-mit061",
+        "sub-mit076",
+        "sub-mit121",
+        "sub-mit123"
+      ],
+      "high_trials": 4,
+      "low_trials": 6,
+      "calibration_scenarios": 24,
+      "scenarios": [
+        {
+          "scenario": 1,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 5.010000000000001,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 52,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 26,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 157,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 59,
+                "low": 98
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 2,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 4.985,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 53,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 26,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 156,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 59,
+                "low": 97
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 3,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 6,
+          "target_subject_relative_threshold": 6.695,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 43,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 26,
+                "low": 17
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 166,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 59,
+                "low": 107
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 4,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 4.985,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 26,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 161,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 59,
+                "low": 102
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 5,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 6.0200000000000005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 44,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 26,
+                "low": 18
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 165,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 59,
+                "low": 106
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 6,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.985,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 40,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 26,
+                "low": 14
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 169,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 59,
+                "low": 110
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 7,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 5.025,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 162,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 98
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 8,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 5.0,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 161,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 97
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 9,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 6,
+          "target_subject_relative_threshold": 6.71,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 38,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 17
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 171,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 107
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 10,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 5.0,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 43,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 166,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 102
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 11,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 6.035,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 39,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 18
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 170,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 106
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 12,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 5.0,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 35,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 14
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 174,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 110
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 13,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 4.03,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 46,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 163,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 65,
+                "low": 98
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 14,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 4.005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 162,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 65,
+                "low": 97
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 15,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 6,
+          "target_subject_relative_threshold": 5.715,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 37,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 17
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 172,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 65,
+                "low": 107
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 16,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 4.005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 42,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 167,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 65,
+                "low": 102
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 17,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 5.04,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 38,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 18
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 171,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 65,
+                "low": 106
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 18,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 34,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 14
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 175,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 65,
+                "low": 110
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 19,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 3.5549999999999997,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 44,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 18,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 165,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 67,
+                "low": 98
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 20,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 3.53,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 45,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 18,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 164,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 67,
+                "low": 97
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 21,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 6,
+          "target_subject_relative_threshold": 5.24,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 35,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 18,
+                "low": 17
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 174,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 67,
+                "low": 107
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 22,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 3.53,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 40,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 18,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 169,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 67,
+                "low": 102
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 23,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 4.5649999999999995,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 36,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 18,
+                "low": 18
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 173,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 67,
+                "low": 106
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 24,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 3.53,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 32,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 18,
+                "low": 14
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 937,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 386,
+                "low": 551
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 177,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 67,
+                "low": 110
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 5
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "target_subject": "sub-mit004",
+      "pretrain_subjects": [
+        "sub-mit003",
+        "sub-mit061",
+        "sub-mit076",
+        "sub-mit121",
+        "sub-mit123"
+      ],
+      "high_trials": 2,
+      "low_trials": 5,
+      "calibration_scenarios": 10,
+      "scenarios": [
+        {
+          "scenario": 1,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 1,
+          "target_subject_relative_threshold": 6.425000000000001,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 23,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 12
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 59,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 46
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 2,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 5.01,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 20,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 9
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 62,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 49
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 3,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 5.78,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 22,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 11
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 60,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 47
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 4,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 5.095000000000001,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 21,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 10
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 61,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 48
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 5,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 11,
+          "target_subject_relative_threshold": 5.02,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 27,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 16
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 55,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 42
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 6,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 1,
+          "target_subject_relative_threshold": 6.9350000000000005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 25,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 12
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 57,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 46
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 7,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 5.5200000000000005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 22,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 9
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 60,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 49
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 8,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 6.29,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 24,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 11
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 58,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 47
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 9,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 5.605,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 23,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 10
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 59,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 48
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 10,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 11,
+          "target_subject_relative_threshold": 5.53,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 29,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 16
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 1064,
+              "trials": 49,
+              "subjects": 5,
+              "window_labels": {
+                "high": 447,
+                "low": 617
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 53,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 42
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "target_subject": "sub-mit061",
+      "pretrain_subjects": [
+        "sub-mit003",
+        "sub-mit004",
+        "sub-mit076",
+        "sub-mit121",
+        "sub-mit123"
+      ],
+      "high_trials": 7,
+      "low_trials": 2,
+      "calibration_scenarios": 14,
+      "scenarios": [
+        {
+          "scenario": 1,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 4.125,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 123,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 104,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 2,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 3.505,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 39,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 131,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 104,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 3,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 5.0600000000000005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 123,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 104,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 4,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.44,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 39,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 20,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 131,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 104,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 5,
+          "calibration_high_trial": 4,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 5.09,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 50,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 23,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 120,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 101,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 6,
+          "calibration_high_trial": 4,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.47,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 42,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 23,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 128,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 101,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 7,
+          "calibration_high_trial": 5,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 5.0600000000000005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 42,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 15,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 128,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 109,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 8,
+          "calibration_high_trial": 5,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.44,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 34,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 15,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 136,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 109,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 9,
+          "calibration_high_trial": 6,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 5.135,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 45,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 18,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 125,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 106,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 10,
+          "calibration_high_trial": 6,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.515,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 37,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 18,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 133,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 106,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 11,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 6.085,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 43,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 16,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 127,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 108,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 12,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 5.465,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 35,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 16,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 135,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 108,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 13,
+          "calibration_high_trial": 9,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 4.105,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 39,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 12,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 131,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 112,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "scenario": 14,
+          "calibration_high_trial": 9,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 3.485,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 31,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 12,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 347,
+                "low": 629
+              },
+              "trial_labels": {
+                "high": 17,
+                "low": 30
+              }
+            },
+            "test": {
+              "windows": 139,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 112,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 6,
+                "low": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "target_subject": "sub-mit076",
+      "pretrain_subjects": [
+        "sub-mit003",
+        "sub-mit004",
+        "sub-mit061",
+        "sub-mit121",
+        "sub-mit123"
+      ],
+      "high_trials": 4,
+      "low_trials": 5,
+      "calibration_scenarios": 20,
+      "scenarios": [
+        {
+          "scenario": 1,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 1,
+          "target_subject_relative_threshold": 6.945,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 30,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 19,
+                "low": 11
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 140,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 55,
+                "low": 85
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 2,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 5.0,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 34,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 19,
+                "low": 15
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 136,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 55,
+                "low": 81
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 3,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 5.010000000000001,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 19,
+                "low": 29
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 122,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 55,
+                "low": 67
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 4,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 6,
+          "target_subject_relative_threshold": 4.985,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 33,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 19,
+                "low": 14
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 137,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 55,
+                "low": 82
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 5,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 8,
+          "target_subject_relative_threshold": 4.985,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 46,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 19,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 124,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 55,
+                "low": 69
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 6,
+          "calibration_high_trial": 5,
+          "calibration_low_trial": 1,
+          "target_subject_relative_threshold": 6.425,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 35,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 11
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 135,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 85
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 7,
+          "calibration_high_trial": 5,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 4.4799999999999995,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 39,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 15
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 131,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 81
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 8,
+          "calibration_high_trial": 5,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 4.49,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 53,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 29
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 117,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 67
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 9,
+          "calibration_high_trial": 5,
+          "calibration_low_trial": 6,
+          "target_subject_relative_threshold": 4.465,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 38,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 14
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 132,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 82
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 10,
+          "calibration_high_trial": 5,
+          "calibration_low_trial": 8,
+          "target_subject_relative_threshold": 4.465,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 119,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 69
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 11,
+          "calibration_high_trial": 7,
+          "calibration_low_trial": 1,
+          "target_subject_relative_threshold": 6.485,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 21,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 10,
+                "low": 11
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 149,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 85
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 12,
+          "calibration_high_trial": 7,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 4.54,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 25,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 10,
+                "low": 15
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 145,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 81
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 13,
+          "calibration_high_trial": 7,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 4.550000000000001,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 39,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 10,
+                "low": 29
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 131,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 67
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 14,
+          "calibration_high_trial": 7,
+          "calibration_low_trial": 6,
+          "target_subject_relative_threshold": 4.525,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 24,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 10,
+                "low": 14
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 146,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 82
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 15,
+          "calibration_high_trial": 7,
+          "calibration_low_trial": 8,
+          "target_subject_relative_threshold": 4.525,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 37,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 10,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 133,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 64,
+                "low": 69
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 16,
+          "calibration_high_trial": 10,
+          "calibration_low_trial": 1,
+          "target_subject_relative_threshold": 6.485,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 32,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 11
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 138,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 53,
+                "low": 85
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 17,
+          "calibration_high_trial": 10,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 4.54,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 36,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 15
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 134,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 53,
+                "low": 81
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 18,
+          "calibration_high_trial": 10,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 4.550000000000001,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 50,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 29
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 120,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 53,
+                "low": 67
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 19,
+          "calibration_high_trial": 10,
+          "calibration_low_trial": 6,
+          "target_subject_relative_threshold": 4.525,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 35,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 14
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 135,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 53,
+                "low": 82
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "scenario": 20,
+          "calibration_high_trial": 10,
+          "calibration_low_trial": 8,
+          "target_subject_relative_threshold": 4.525,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 976,
+              "trials": 47,
+              "subjects": 5,
+              "window_labels": {
+                "high": 397,
+                "low": 579
+              },
+              "trial_labels": {
+                "high": 20,
+                "low": 27
+              }
+            },
+            "test": {
+              "windows": 122,
+              "trials": 7,
+              "subjects": 1,
+              "window_labels": {
+                "high": 53,
+                "low": 69
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 4
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "target_subject": "sub-mit121",
+      "pretrain_subjects": [
+        "sub-mit003",
+        "sub-mit004",
+        "sub-mit061",
+        "sub-mit076",
+        "sub-mit123"
+      ],
+      "high_trials": 5,
+      "low_trials": 6,
+      "calibration_scenarios": 30,
+      "scenarios": [
+        {
+          "scenario": 1,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 3,
+          "target_subject_relative_threshold": 5.515,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 218,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 2,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 5.995,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 45,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 20
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 224,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 128
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 3,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 4.4799999999999995,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 52,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 217,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 4,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 4.52,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 222,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 126
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 5,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 4.28,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 218,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 6,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.54,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 52,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 217,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 7,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 3,
+          "target_subject_relative_threshold": 6.38,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 218,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 8,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 6.86,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 45,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 20
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 224,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 128
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 9,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 5.345,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 52,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 217,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 10,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 5.385,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 222,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 126
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 11,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 5.1450000000000005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 218,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 12,
+          "calibration_high_trial": 2,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 5.405,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 52,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 217,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 13,
+          "calibration_high_trial": 6,
+          "calibration_low_trial": 3,
+          "target_subject_relative_threshold": 4.645,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 50,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 219,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 97,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 14,
+          "calibration_high_trial": 6,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 5.125,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 44,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 20
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 225,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 97,
+                "low": 128
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 15,
+          "calibration_high_trial": 6,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 3.61,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 218,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 97,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 16,
+          "calibration_high_trial": 6,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 3.6499999999999995,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 46,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 223,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 97,
+                "low": 126
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 17,
+          "calibration_high_trial": 6,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 3.4099999999999997,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 50,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 219,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 97,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 18,
+          "calibration_high_trial": 6,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 3.67,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 24,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 218,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 97,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 19,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 3,
+          "target_subject_relative_threshold": 5.965,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 218,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 20,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 6.445,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 45,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 20
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 224,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 128
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 21,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 4.93,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 52,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 217,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 22,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 4.97,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 222,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 126
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 23,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 4.73,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 218,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 24,
+          "calibration_high_trial": 8,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.99,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 52,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 25,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 217,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 96,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 25,
+          "calibration_high_trial": 11,
+          "calibration_low_trial": 3,
+          "target_subject_relative_threshold": 4.99,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 221,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 99,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 26,
+          "calibration_high_trial": 11,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 5.470000000000001,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 42,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 20
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 227,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 99,
+                "low": 128
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 27,
+          "calibration_high_trial": 11,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 3.955,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 49,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 220,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 99,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 28,
+          "calibration_high_trial": 11,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 3.995,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 44,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 225,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 99,
+                "low": 126
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 29,
+          "calibration_high_trial": 11,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 3.755,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 221,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 99,
+                "low": 122
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        },
+        {
+          "scenario": 30,
+          "calibration_high_trial": 11,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.015,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 49,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 877,
+              "trials": 45,
+              "subjects": 5,
+              "window_labels": {
+                "high": 350,
+                "low": 527
+              },
+              "trial_labels": {
+                "high": 19,
+                "low": 26
+              }
+            },
+            "test": {
+              "windows": 220,
+              "trials": 9,
+              "subjects": 1,
+              "window_labels": {
+                "high": 99,
+                "low": 121
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 5
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "target_subject": "sub-mit123",
+      "pretrain_subjects": [
+        "sub-mit003",
+        "sub-mit004",
+        "sub-mit061",
+        "sub-mit076",
+        "sub-mit121"
+      ],
+      "high_trials": 2,
+      "low_trials": 8,
+      "calibration_scenarios": 16,
+      "scenarios": [
+        {
+          "scenario": 1,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 3.455,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 199,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 177
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 2,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 3.445,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 198,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 176
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 3,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 3.405,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 43,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 203,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 181
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 4,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 3.405,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 46,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 25
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 200,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 178
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 5,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 8,
+          "target_subject_relative_threshold": 3.445,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 41,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 20
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 205,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 183
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 6,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 3.5349999999999997,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 199,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 177
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 7,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.18,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 49,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 28
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 197,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 175
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 8,
+          "calibration_high_trial": 1,
+          "calibration_low_trial": 11,
+          "target_subject_relative_threshold": 4.365,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 50,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 29
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 196,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 174
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 9,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 2,
+          "target_subject_relative_threshold": 4.07,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 198,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 177
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 10,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 4,
+          "target_subject_relative_threshold": 4.0600000000000005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 49,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 197,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 176
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 11,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 5,
+          "target_subject_relative_threshold": 4.02,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 44,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 22
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 202,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 181
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 12,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 7,
+          "target_subject_relative_threshold": 4.02,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 47,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 25
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 199,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 178
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 13,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 8,
+          "target_subject_relative_threshold": 4.0600000000000005,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 42,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 20
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 204,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 183
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 14,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 9,
+          "target_subject_relative_threshold": 4.15,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 48,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 198,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 177
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 15,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 10,
+          "target_subject_relative_threshold": 4.795,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 50,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 28
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 196,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 175
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        },
+        {
+          "scenario": 16,
+          "calibration_high_trial": 3,
+          "calibration_low_trial": 11,
+          "target_subject_relative_threshold": 4.98,
+          "leakage_free": true,
+          "calibration_has_one_trial_per_class": true,
+          "test_has_two_classes": true,
+          "partitions": {
+            "calibration": {
+              "windows": 51,
+              "trials": 2,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 29
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 1
+              }
+            },
+            "pretrain": {
+              "windows": 900,
+              "trials": 46,
+              "subjects": 5,
+              "window_labels": {
+                "high": 428,
+                "low": 472
+              },
+              "trial_labels": {
+                "high": 22,
+                "low": 24
+              }
+            },
+            "test": {
+              "windows": 195,
+              "trials": 8,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 174
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 7
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

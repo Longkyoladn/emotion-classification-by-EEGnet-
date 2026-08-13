@@ -1,0 +1,4286 @@
+{
+  "protocol": "subject_dependent_repeated_stratified_2fold",
+  "task": "valence_binary_fixed5",
+  "subjects": [
+    "sub-mit003",
+    "sub-mit004",
+    "sub-mit061",
+    "sub-mit076",
+    "sub-mit121",
+    "sub-mit123"
+  ],
+  "repeats": 10,
+  "seed": 20260814,
+  "stratification_unit": "trial",
+  "subject_relative_threshold_source": "training_trials_only",
+  "all_folds_leakage_free": true,
+  "all_folds_class_complete": true,
+  "subject_summaries": [
+    {
+      "subject": "sub-mit003",
+      "eligible_trials": 10,
+      "eligible_windows": 209,
+      "trial_labels": {
+        "high": 4,
+        "low": 6
+      },
+      "folds": [
+        {
+          "repeat": 1,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 109,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 46,
+                "low": 63
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 39,
+                "low": 61
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 1,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.0,
+          "partitions": {
+            "test": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 39,
+                "low": 61
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 109,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 46,
+                "low": 63
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 59
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 109,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 65
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.07,
+          "partitions": {
+            "test": {
+              "windows": 109,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 65
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 59
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.0,
+          "partitions": {
+            "test": {
+              "windows": 107,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 46,
+                "low": 61
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 102,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 39,
+                "low": 63
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 102,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 39,
+                "low": 63
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 107,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 46,
+                "low": 61
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.05,
+          "partitions": {
+            "test": {
+              "windows": 106,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 62
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 103,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 62
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 103,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 62
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 106,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 62
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 113,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 66
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 96,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 38,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.07,
+          "partitions": {
+            "test": {
+              "windows": 96,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 38,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 113,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 66
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.05,
+          "partitions": {
+            "test": {
+              "windows": 109,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 62
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 38,
+                "low": 62
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 38,
+                "low": 62
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 109,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 62
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 99,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 110,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 66
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.07,
+          "partitions": {
+            "test": {
+              "windows": 110,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 66
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 99,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.07,
+          "partitions": {
+            "test": {
+              "windows": 107,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 66
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 102,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 102,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 107,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 66
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.0,
+          "partitions": {
+            "test": {
+              "windows": 102,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 61
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 107,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 63
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 107,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 44,
+                "low": 63
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 102,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 41,
+                "low": 61
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.42,
+          "partitions": {
+            "test": {
+              "windows": 118,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 71
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 91,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 38,
+                "low": 53
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.07,
+          "partitions": {
+            "test": {
+              "windows": 91,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 38,
+                "low": 53
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 118,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 71
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "subject": "sub-mit004",
+      "eligible_trials": 7,
+      "eligible_windows": 82,
+      "trial_labels": {
+        "high": 2,
+        "low": 5
+      },
+      "folds": [
+        {
+          "repeat": 1,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.61,
+          "partitions": {
+            "test": {
+              "windows": 50,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 37
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 32,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 21
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 1,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.495,
+          "partitions": {
+            "test": {
+              "windows": 32,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 21
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 50,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 37
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.9,
+          "partitions": {
+            "test": {
+              "windows": 46,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 35
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 36,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 23
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.165,
+          "partitions": {
+            "test": {
+              "windows": 36,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 23
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 46,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 35
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.24,
+          "partitions": {
+            "test": {
+              "windows": 45,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 32
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 37,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.255,
+          "partitions": {
+            "test": {
+              "windows": 37,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 45,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 32
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.61,
+          "partitions": {
+            "test": {
+              "windows": 50,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 37
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 32,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 21
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.495,
+          "partitions": {
+            "test": {
+              "windows": 32,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 21
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 50,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 37
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.9,
+          "partitions": {
+            "test": {
+              "windows": 50,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 37
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 32,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 21
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.925,
+          "partitions": {
+            "test": {
+              "windows": 32,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 21
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 50,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 37
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.61,
+          "partitions": {
+            "test": {
+              "windows": 48,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 37
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 34,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 21
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.495,
+          "partitions": {
+            "test": {
+              "windows": 34,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 21
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 48,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 37
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.9,
+          "partitions": {
+            "test": {
+              "windows": 48,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 35
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 34,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 23
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.165,
+          "partitions": {
+            "test": {
+              "windows": 34,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 23
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 48,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 35
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.9,
+          "partitions": {
+            "test": {
+              "windows": 43,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 30
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 39,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 28
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.925,
+          "partitions": {
+            "test": {
+              "windows": 39,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 28
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 43,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 30
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.24,
+          "partitions": {
+            "test": {
+              "windows": 52,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 39
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 30,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.255,
+          "partitions": {
+            "test": {
+              "windows": 30,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 52,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 39
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.61,
+          "partitions": {
+            "test": {
+              "windows": 42,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 31
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 40,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.5700000000000003,
+          "partitions": {
+            "test": {
+              "windows": 40,
+              "trials": 3,
+              "subjects": 1,
+              "window_labels": {
+                "high": 13,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 42,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 11,
+                "low": 31
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "subject": "sub-mit061",
+      "eligible_trials": 9,
+      "eligible_windows": 170,
+      "trial_labels": {
+        "high": 7,
+        "low": 2
+      },
+      "folds": [
+        {
+          "repeat": 1,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.98,
+          "partitions": {
+            "test": {
+              "windows": 82,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 63,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 88,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 61,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 1,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 5.08,
+          "partitions": {
+            "test": {
+              "windows": 88,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 61,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 82,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 63,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 5.0600000000000005,
+          "partitions": {
+            "test": {
+              "windows": 93,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 77,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.95,
+          "partitions": {
+            "test": {
+              "windows": 77,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 93,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.07,
+          "partitions": {
+            "test": {
+              "windows": 105,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 78,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 65,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 46,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.95,
+          "partitions": {
+            "test": {
+              "windows": 65,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 46,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 105,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 78,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.015000000000001,
+          "partitions": {
+            "test": {
+              "windows": 92,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 73,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 78,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 51,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.95,
+          "partitions": {
+            "test": {
+              "windows": 78,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 51,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 92,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 73,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 5.995,
+          "partitions": {
+            "test": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 81,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 70,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.95,
+          "partitions": {
+            "test": {
+              "windows": 70,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 81,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.025,
+          "partitions": {
+            "test": {
+              "windows": 92,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 73,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 78,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 51,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.95,
+          "partitions": {
+            "test": {
+              "windows": 78,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 51,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 92,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 73,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 7.025,
+          "partitions": {
+            "test": {
+              "windows": 102,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 75,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 68,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 49,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 5.08,
+          "partitions": {
+            "test": {
+              "windows": 68,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 49,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 102,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 75,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.025,
+          "partitions": {
+            "test": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 73,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 70,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 51,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.95,
+          "partitions": {
+            "test": {
+              "windows": 70,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 51,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 73,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 5.995,
+          "partitions": {
+            "test": {
+              "windows": 101,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 69,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.95,
+          "partitions": {
+            "test": {
+              "windows": 69,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 101,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.045,
+          "partitions": {
+            "test": {
+              "windows": 90,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 63,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 80,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 61,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.95,
+          "partitions": {
+            "test": {
+              "windows": 80,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 61,
+                "low": 19
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 1
+              }
+            },
+            "train": {
+              "windows": 90,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 63,
+                "low": 27
+              },
+              "trial_labels": {
+                "high": 4,
+                "low": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "subject": "sub-mit076",
+      "eligible_trials": 9,
+      "eligible_windows": 170,
+      "trial_labels": {
+        "high": 4,
+        "low": 5
+      },
+      "folds": [
+        {
+          "repeat": 1,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.525,
+          "partitions": {
+            "test": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 45,
+                "low": 55
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 70,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 29,
+                "low": 41
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 1,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.92,
+          "partitions": {
+            "test": {
+              "windows": 70,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 29,
+                "low": 41
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 45,
+                "low": 55
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.525,
+          "partitions": {
+            "test": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 45,
+                "low": 55
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 70,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 29,
+                "low": 41
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.92,
+          "partitions": {
+            "test": {
+              "windows": 70,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 29,
+                "low": 41
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 100,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 45,
+                "low": 55
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.550000000000001,
+          "partitions": {
+            "test": {
+              "windows": 87,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 34,
+                "low": 53
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 83,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 40,
+                "low": 43
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.92,
+          "partitions": {
+            "test": {
+              "windows": 83,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 40,
+                "low": 43
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 87,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 34,
+                "low": 53
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.49,
+          "partitions": {
+            "test": {
+              "windows": 83,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 31,
+                "low": 52
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 87,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 44
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.92,
+          "partitions": {
+            "test": {
+              "windows": 87,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 44
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 83,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 31,
+                "low": 52
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.550000000000001,
+          "partitions": {
+            "test": {
+              "windows": 98,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 45,
+                "low": 53
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 72,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 29,
+                "low": 43
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.92,
+          "partitions": {
+            "test": {
+              "windows": 72,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 29,
+                "low": 43
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 98,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 45,
+                "low": 53
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.485,
+          "partitions": {
+            "test": {
+              "windows": 101,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 69,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 31,
+                "low": 38
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.05,
+          "partitions": {
+            "test": {
+              "windows": 69,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 31,
+                "low": 38
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 101,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 58
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.485,
+          "partitions": {
+            "test": {
+              "windows": 114,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 71
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 56,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 31,
+                "low": 25
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.05,
+          "partitions": {
+            "test": {
+              "windows": 56,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 31,
+                "low": 25
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 114,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 71
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.550000000000001,
+          "partitions": {
+            "test": {
+              "windows": 96,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 53
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 74,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 31,
+                "low": 43
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.92,
+          "partitions": {
+            "test": {
+              "windows": 74,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 31,
+                "low": 43
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 96,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 43,
+                "low": 53
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.49,
+          "partitions": {
+            "test": {
+              "windows": 80,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 40,
+                "low": 40
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 90,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 34,
+                "low": 56
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.92,
+          "partitions": {
+            "test": {
+              "windows": 90,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 34,
+                "low": 56
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 80,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 40,
+                "low": 40
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 6.425,
+          "partitions": {
+            "test": {
+              "windows": 110,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 40,
+                "low": 70
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 60,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 34,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.05,
+          "partitions": {
+            "test": {
+              "windows": 60,
+              "trials": 4,
+              "subjects": 1,
+              "window_labels": {
+                "high": 34,
+                "low": 26
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 2
+              }
+            },
+            "train": {
+              "windows": 110,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 40,
+                "low": 70
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "subject": "sub-mit121",
+      "eligible_trials": 11,
+      "eligible_windows": 269,
+      "trial_labels": {
+        "high": 5,
+        "low": 6
+      },
+      "folds": [
+        {
+          "repeat": 1,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.02,
+          "partitions": {
+            "test": {
+              "windows": 139,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 71,
+                "low": 68
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 130,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 80
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 1,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 5.125,
+          "partitions": {
+            "test": {
+              "windows": 130,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 80
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 139,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 71,
+                "low": 68
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.98,
+          "partitions": {
+            "test": {
+              "windows": 147,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 72,
+                "low": 75
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 122,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 49,
+                "low": 73
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.995,
+          "partitions": {
+            "test": {
+              "windows": 122,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 49,
+                "low": 73
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 147,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 72,
+                "low": 75
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.98,
+          "partitions": {
+            "test": {
+              "windows": 149,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 75
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 120,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 73
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.67,
+          "partitions": {
+            "test": {
+              "windows": 120,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 73
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 149,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 75
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.98,
+          "partitions": {
+            "test": {
+              "windows": 147,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 72,
+                "low": 75
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 122,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 49,
+                "low": 73
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.99,
+          "partitions": {
+            "test": {
+              "windows": 122,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 49,
+                "low": 73
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 147,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 72,
+                "low": 75
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.98,
+          "partitions": {
+            "test": {
+              "windows": 147,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 71,
+                "low": 76
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 122,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 72
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.67,
+          "partitions": {
+            "test": {
+              "windows": 122,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 72
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 147,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 71,
+                "low": 76
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.07,
+          "partitions": {
+            "test": {
+              "windows": 142,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 68
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 127,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 80
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 5.125,
+          "partitions": {
+            "test": {
+              "windows": 127,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 80
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 142,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 68
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.98,
+          "partitions": {
+            "test": {
+              "windows": 146,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 72,
+                "low": 74
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 123,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 49,
+                "low": 74
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.99,
+          "partitions": {
+            "test": {
+              "windows": 123,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 49,
+                "low": 74
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 146,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 72,
+                "low": 74
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.98,
+          "partitions": {
+            "test": {
+              "windows": 150,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 76
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 119,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 72
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.67,
+          "partitions": {
+            "test": {
+              "windows": 119,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 72
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 150,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 76
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.98,
+          "partitions": {
+            "test": {
+              "windows": 150,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 76
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 119,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 72
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.67,
+          "partitions": {
+            "test": {
+              "windows": 119,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 47,
+                "low": 72
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 150,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 74,
+                "low": 76
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 4.98,
+          "partitions": {
+            "test": {
+              "windows": 151,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 71,
+                "low": 80
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 118,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 68
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 3.67,
+          "partitions": {
+            "test": {
+              "windows": 118,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 50,
+                "low": 68
+              },
+              "trial_labels": {
+                "high": 2,
+                "low": 3
+              }
+            },
+            "train": {
+              "windows": 151,
+              "trials": 6,
+              "subjects": 1,
+              "window_labels": {
+                "high": 71,
+                "low": 80
+              },
+              "trial_labels": {
+                "high": 3,
+                "low": 3
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "subject": "sub-mit123",
+      "eligible_trials": 10,
+      "eligible_windows": 246,
+      "trial_labels": {
+        "high": 2,
+        "low": 8
+      },
+      "folds": [
+        {
+          "repeat": 1,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.26,
+          "partitions": {
+            "test": {
+              "windows": 120,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 98
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 126,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 105
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 1,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.08,
+          "partitions": {
+            "test": {
+              "windows": 126,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 105
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 120,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 98
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.08,
+          "partitions": {
+            "test": {
+              "windows": 124,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 102
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 122,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 101
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 2,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.26,
+          "partitions": {
+            "test": {
+              "windows": 122,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 101
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 124,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 102
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.55,
+          "partitions": {
+            "test": {
+              "windows": 116,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 95
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 130,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 108
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 3,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.08,
+          "partitions": {
+            "test": {
+              "windows": 130,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 108
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 116,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 95
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.1,
+          "partitions": {
+            "test": {
+              "windows": 118,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 97
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 128,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 106
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 4,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.26,
+          "partitions": {
+            "test": {
+              "windows": 128,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 106
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 118,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 97
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.1,
+          "partitions": {
+            "test": {
+              "windows": 120,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 99
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 126,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 104
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 5,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.55,
+          "partitions": {
+            "test": {
+              "windows": 126,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 104
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 120,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 99
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.08,
+          "partitions": {
+            "test": {
+              "windows": 125,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 103
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 121,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 100
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 6,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.55,
+          "partitions": {
+            "test": {
+              "windows": 121,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 100
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 125,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 103
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.26,
+          "partitions": {
+            "test": {
+              "windows": 121,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 100
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 125,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 103
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 7,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.08,
+          "partitions": {
+            "test": {
+              "windows": 125,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 103
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 121,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 100
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.26,
+          "partitions": {
+            "test": {
+              "windows": 118,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 96
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 128,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 107
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 8,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.08,
+          "partitions": {
+            "test": {
+              "windows": 128,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 107
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 118,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 96
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.08,
+          "partitions": {
+            "test": {
+              "windows": 127,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 105
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 119,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 98
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 9,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.55,
+          "partitions": {
+            "test": {
+              "windows": 119,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 98
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 127,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 105
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 1,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 1.1,
+          "partitions": {
+            "test": {
+              "windows": 130,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 109
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 116,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 94
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        },
+        {
+          "repeat": 10,
+          "fold": 2,
+          "leakage_free": true,
+          "both_partitions_have_two_classes": true,
+          "subject_relative_threshold": 2.55,
+          "partitions": {
+            "test": {
+              "windows": 116,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 22,
+                "low": 94
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            },
+            "train": {
+              "windows": 130,
+              "trials": 5,
+              "subjects": 1,
+              "window_labels": {
+                "high": 21,
+                "low": 109
+              },
+              "trial_labels": {
+                "high": 1,
+                "low": 4
+              }
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

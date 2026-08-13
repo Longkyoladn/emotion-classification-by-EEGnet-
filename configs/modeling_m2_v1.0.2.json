@@ -1,0 +1,42 @@
+{
+  "dataset_snapshot": "1.0.2",
+  "cohort_config": "configs/cohort_dens_v1.0.2.json",
+  "primary_task": "valence_binary_fixed5",
+  "subject_role": "modeling_primary",
+  "index_output": "data/modeling/modeling_index_v1.0.2.csv",
+  "protocols": {
+    "subject_dependent": {
+      "repeats": 10,
+      "seed": 20260814,
+      "output": "data/modeling/subject_dependent_valence_fixed5_v1.0.2.csv",
+      "summary_output": "data/modeling/subject_dependent_valence_fixed5_v1.0.2_summary.json"
+    },
+    "cross_subject": {
+      "protocol": "nested_loso",
+      "output": "data/modeling/loso_valence_fixed5_v1.0.2.csv",
+      "summary_output": "data/modeling/loso_valence_fixed5_v1.0.2_summary.json"
+    },
+    "personalization": {
+      "calibration": "all_high_trial_x_low_trial_pairs",
+      "output": "data/modeling/personalization_valence_fixed5_v1.0.2.csv",
+      "summary_output": "data/modeling/personalization_valence_fixed5_v1.0.2_summary.json"
+    },
+    "sensitivity": {
+      "subject_role": "sensitivity_only",
+      "output": "data/modeling/sensitivity_valence_fixed5_v1.0.2.csv",
+      "summary_output": "data/modeling/sensitivity_valence_fixed5_v1.0.2_summary.json"
+    }
+  },
+  "subject_relative_labels": {
+    "role": "ablation_only",
+    "allowed_protocols": [
+      "subject_dependent",
+      "personalization"
+    ],
+    "forbidden_protocols": [
+      "cross_subject",
+      "sensitivity"
+    ],
+    "equal_to_training_median": "ambiguous"
+  }
+}
