@@ -1,0 +1,36 @@
+{
+  "checkpoint": "P6",
+  "subject": "sub-mit003",
+  "trials": 11,
+  "fit_highpass_hz": 1.0,
+  "fit_lowpass_hz": 45.0,
+  "notch_hz": 50.0,
+  "ica_method": "fastica",
+  "random_state": 42,
+  "pca_variance_target": 0.99,
+  "components": 73,
+  "review_candidates": [
+    11,
+    13,
+    21,
+    23,
+    57
+  ],
+  "proposal_thresholds": {
+    "absolute_ecg_correlation": 0.3,
+    "absolute_emg_correlation": 0.3,
+    "high_frequency_fraction_with_absolute_kurtosis": {
+      "high_frequency_fraction": 0.4,
+      "absolute_kurtosis": 15
+    },
+    "kurtosis_alone_is_not_a_rule": true
+  },
+  "ica_applied_to_eeg": false,
+  "raw_file_unchanged": true,
+  "operations_not_performed": [
+    "component removal",
+    "saving cleaned EEG",
+    "trial rejection",
+    "label derivation"
+  ]
+}
