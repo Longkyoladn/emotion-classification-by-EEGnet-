@@ -15,7 +15,6 @@ import mne
 import numpy as np
 import pandas as pd
 
-
 WINDOW_SECONDS = 4.0
 OVERLAP = 0.5
 
@@ -66,7 +65,9 @@ def classify_window(x_uv: np.ndarray) -> dict[str, object]:
 def plot_timeline(qc: pd.DataFrame, output: Path) -> None:
     colors = {"pass": "#2ca02c", "review": "#ffbf00", "reject": "#d62728"}
     trials = sorted(qc["trial"].unique())
-    fig, axes = plt.subplots(len(trials), 1, figsize=(13, 1.25 * len(trials)), sharex=True)
+    fig, axes = plt.subplots(
+        len(trials), 1, figsize=(13, 1.25 * len(trials)), sharex=True
+    )
     if len(trials) == 1:
         axes = [axes]
     for ax, trial in zip(axes, trials):
@@ -134,12 +135,16 @@ def main() -> None:
     qc.to_csv(qc_path, index=False)
 
     trial_summary = (
-        qc.groupby(["trial", "status"]).size().unstack(fill_value=0)
+        qc.groupby(["trial", "status"])
+        .size()
+        .unstack(fill_value=0)
         .reindex(columns=["pass", "review", "reject"], fill_value=0)
     )
     trial_summary["total"] = trial_summary.sum(axis=1)
     for status in ["pass", "review", "reject"]:
-        trial_summary[f"{status}_fraction"] = trial_summary[status] / trial_summary["total"]
+        trial_summary[f"{status}_fraction"] = (
+            trial_summary[status] / trial_summary["total"]
+        )
     trial_summary.reset_index().to_csv(output_dir / "p9_trial_summary.csv", index=False)
     plot_timeline(qc, output_dir / "p9_window_timeline.png")
 

@@ -13,7 +13,6 @@ import numpy as np
 import pandas as pd
 from scipy.signal import detrend, welch
 
-
 EEG_CHANNELS = [f"E{i}" for i in range(1, 129)]
 CHANNEL_TYPES = {
     **{name: "eeg" for name in EEG_CHANNELS},
@@ -51,7 +50,9 @@ def robust_z(values: np.ndarray) -> np.ndarray:
     return (values - median) / (1.4826 * mad)
 
 
-def band_integral(freqs: np.ndarray, psd: np.ndarray, low: float, high: float) -> np.ndarray:
+def band_integral(
+    freqs: np.ndarray, psd: np.ndarray, low: float, high: float
+) -> np.ndarray:
     mask = (freqs >= low) & (freqs < high)
     return np.trapezoid(psd[:, mask], freqs[mask], axis=1)
 
@@ -59,7 +60,9 @@ def band_integral(freqs: np.ndarray, psd: np.ndarray, low: float, high: float) -
 def main() -> None:
     args = parse_args()
     subject_manifest = pd.read_csv(args.manifest)
-    subject_manifest = subject_manifest.loc[subject_manifest.subject.eq(args.subject)].copy()
+    subject_manifest = subject_manifest.loc[
+        subject_manifest.subject.eq(args.subject)
+    ].copy()
     if subject_manifest.empty:
         raise RuntimeError(f"Subject {args.subject!r} is absent from the manifest")
 
@@ -149,9 +152,12 @@ def main() -> None:
     local_peak_to_peak_chunks: list[np.ndarray] = []
     freqs: np.ndarray | None = None
     for start in starts:
-        data_uv = raw.get_data(
-            picks=eeg_picks, start=int(start), stop=int(start + psd_chunk_samples)
-        ) * 1e6
+        data_uv = (
+            raw.get_data(
+                picks=eeg_picks, start=int(start), stop=int(start + psd_chunk_samples)
+            )
+            * 1e6
+        )
         data_uv = detrend(data_uv, axis=1, type="linear")
         local_std_chunks.append(np.std(data_uv, axis=1))
         local_peak_to_peak_chunks.append(np.ptp(data_uv, axis=1))
@@ -175,9 +181,8 @@ def main() -> None:
     median_channel_correlation = np.nanmedian(correlation_matrix, axis=1)
 
     line_power = band_integral(freqs, median_psd, 49.0, 51.0)
-    line_neighbors = (
-        band_integral(freqs, median_psd, 45.0, 49.0)
-        + band_integral(freqs, median_psd, 51.0, 55.0)
+    line_neighbors = band_integral(freqs, median_psd, 45.0, 49.0) + band_integral(
+        freqs, median_psd, 51.0, 55.0
     )
     line_noise_ratio = line_power / np.maximum(line_neighbors / 4.0, 1e-20)
     high_frequency_ratio = band_integral(freqs, median_psd, 35.0, 45.0) / np.maximum(
@@ -249,7 +254,11 @@ def main() -> None:
         label="channel IQR",
     )
     axis.axvline(50.0, color="red", linestyle="--", label="50 Hz")
-    axis.set(xlabel="Frequency (Hz)", ylabel="PSD (µV²/Hz)", title=f"Raw PSD — {args.subject}")
+    axis.set(
+        xlabel="Frequency (Hz)",
+        ylabel="PSD (µV²/Hz)",
+        title=f"Raw PSD — {args.subject}",
+    )
     axis.grid(alpha=0.25)
     axis.legend()
     figure.tight_layout()
@@ -271,7 +280,10 @@ def main() -> None:
             "missing_expected_channels": missing_expected_channels,
             "unexpected_channels": unexpected_channels,
             "montage_eeg_channels_with_positions": int(
-                sum(np.linalg.norm(raw.info["chs"][pick]["loc"][:3]) > 0 for pick in eeg_picks)
+                sum(
+                    np.linalg.norm(raw.info["chs"][pick]["loc"][:3]) > 0
+                    for pick in eeg_picks
+                )
             ),
             "manifest_trials": int(len(subject_manifest)),
             "structurally_valid_trials": int(len(valid_trials)),
@@ -286,28 +298,52 @@ def main() -> None:
         "raw_quality": {
             "nonfinite_values_total": int(nonfinite_values.sum()),
             "global_std_uv_quantiles": dict(
-                zip(["min", "q25", "median", "q75", "max"], np.quantile(std_uv, [0, .25, .5, .75, 1]).tolist())
+                zip(
+                    ["min", "q25", "median", "q75", "max"],
+                    np.quantile(std_uv, [0, 0.25, 0.5, 0.75, 1]).tolist(),
+                )
             ),
             "global_peak_to_peak_uv_quantiles": dict(
-                zip(["min", "q25", "median", "q75", "max"], np.quantile(peak_to_peak_uv, [0, .25, .5, .75, 1]).tolist())
+                zip(
+                    ["min", "q25", "median", "q75", "max"],
+                    np.quantile(peak_to_peak_uv, [0, 0.25, 0.5, 0.75, 1]).tolist(),
+                )
             ),
             "sampled_local_std_uv_quantiles": dict(
-                zip(["min", "q25", "median", "q75", "max"], np.quantile(local_std_uv, [0, .25, .5, .75, 1]).tolist())
+                zip(
+                    ["min", "q25", "median", "q75", "max"],
+                    np.quantile(local_std_uv, [0, 0.25, 0.5, 0.75, 1]).tolist(),
+                )
             ),
             "sampled_local_peak_to_peak_uv_quantiles": dict(
-                zip(["min", "q25", "median", "q75", "max"], np.quantile(local_peak_to_peak_uv, [0, .25, .5, .75, 1]).tolist())
+                zip(
+                    ["min", "q25", "median", "q75", "max"],
+                    np.quantile(
+                        local_peak_to_peak_uv, [0, 0.25, 0.5, 0.75, 1]
+                    ).tolist(),
+                )
             ),
             "boundary_annotations": int(
                 np.sum(np.asarray(raw.annotations.description) == "boundary")
             ),
             "line_noise_ratio_50hz_quantiles": dict(
-                zip(["min", "q25", "median", "q75", "max"], np.quantile(line_noise_ratio, [0, .25, .5, .75, 1]).tolist())
+                zip(
+                    ["min", "q25", "median", "q75", "max"],
+                    np.quantile(line_noise_ratio, [0, 0.25, 0.5, 0.75, 1]).tolist(),
+                )
             ),
             "median_channel_correlation_quantiles": dict(
-                zip(["min", "q25", "median", "q75", "max"], np.quantile(median_channel_correlation, [0, .25, .5, .75, 1]).tolist())
+                zip(
+                    ["min", "q25", "median", "q75", "max"],
+                    np.quantile(
+                        median_channel_correlation, [0, 0.25, 0.5, 0.75, 1]
+                    ).tolist(),
+                )
             ),
             "suspect_channels_count": int(channels.suspect.sum()),
-            "suspect_channels": channels.loc[channels.suspect, ["channel", "suspect_reasons"]].to_dict("records"),
+            "suspect_channels": channels.loc[
+                channels.suspect, ["channel", "suspect_reasons"]
+            ].to_dict("records"),
             "thresholds_are_provisional": True,
         },
         "artifacts": {

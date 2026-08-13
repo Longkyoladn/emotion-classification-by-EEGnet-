@@ -12,7 +12,6 @@ import numpy as np
 import pandas as pd
 from scipy.signal import detrend, welch
 
-
 EEG_CHANNELS = [f"E{i}" for i in range(1, 129)]
 BANDS = {
     "delta_1_4": (1.0, 4.0),
@@ -47,7 +46,9 @@ def robust_z(values: np.ndarray) -> np.ndarray:
     return (values - median) / (1.4826 * mad)
 
 
-def integrate(freqs: np.ndarray, psd: np.ndarray, low: float, high: float) -> np.ndarray:
+def integrate(
+    freqs: np.ndarray, psd: np.ndarray, low: float, high: float
+) -> np.ndarray:
     mask = (freqs >= low) & (freqs < high)
     return np.trapezoid(psd[..., mask], freqs[mask], axis=-1)
 
@@ -117,13 +118,15 @@ def main() -> None:
         padded_end = min(raw.n_times, end + padding_samples)
         left_crop = onset - padded_start
         right_crop = left_crop + (end - onset)
-        padded = raw.get_data(
-            picks=eeg_picks, start=padded_start, stop=padded_end
-        ) * 1e6
+        padded = (
+            raw.get_data(picks=eeg_picks, start=padded_start, stop=padded_end) * 1e6
+        )
 
         for name, config in CONFIGURATIONS.items():
             if name == "raw":
-                central = detrend(padded[:, left_crop:right_crop], axis=1, type="linear")
+                central = detrend(
+                    padded[:, left_crop:right_crop], axis=1, type="linear"
+                )
             else:
                 filtered = apply_configuration(padded, sfreq, config)
                 central = filtered[:, left_crop:right_crop]
@@ -146,9 +149,7 @@ def main() -> None:
             )
             middle_rms = np.sqrt(np.mean(np.square(middle), axis=1))
             edge_rms = np.sqrt(np.mean(np.square(edges), axis=1))
-            outputs[name]["edge_ratio"].append(
-                edge_rms / np.maximum(middle_rms, 1e-12)
-            )
+            outputs[name]["edge_ratio"].append(edge_rms / np.maximum(middle_rms, 1e-12))
 
     assert freqs is not None
     summary_rows = []
@@ -169,9 +170,9 @@ def main() -> None:
         median_correlation = np.nanmedian(correlations, axis=1)
 
         line_power = integrate(freqs, median_psd_by_channel, 49.0, 51.0)
-        neighbor_power = integrate(freqs, median_psd_by_channel, 45.0, 49.0) + integrate(
-            freqs, median_psd_by_channel, 51.0, 55.0
-        )
+        neighbor_power = integrate(
+            freqs, median_psd_by_channel, 45.0, 49.0
+        ) + integrate(freqs, median_psd_by_channel, 51.0, 55.0)
         line_ratio = line_power / np.maximum(neighbor_power / 4.0, 1e-20)
         band_power = {
             band: float(np.median(integrate(freqs, median_psd_by_channel, low, high)))
@@ -248,8 +249,12 @@ def main() -> None:
     full_mask = (freqs >= 0.5) & (freqs <= 60.0)
     zoom_mask = (freqs >= 44.0) & (freqs <= 56.0)
     for name, result in processed.items():
-        axes[0].semilogy(freqs[full_mask], result["aggregate_psd"][full_mask], label=name)
-        axes[1].semilogy(freqs[zoom_mask], result["aggregate_psd"][zoom_mask], label=name)
+        axes[0].semilogy(
+            freqs[full_mask], result["aggregate_psd"][full_mask], label=name
+        )
+        axes[1].semilogy(
+            freqs[zoom_mask], result["aggregate_psd"][zoom_mask], label=name
+        )
     for axis in axes:
         axis.axvline(50.0, color="red", linestyle="--", alpha=0.7)
         axis.grid(alpha=0.25)

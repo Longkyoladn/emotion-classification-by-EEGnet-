@@ -8,7 +8,6 @@ from typing import Any
 
 import pandas as pd
 
-
 REPORTS_DIR = Path("reports")
 QC_DIR = REPORTS_DIR / "qc"
 INTEGRITY_REPORT = REPORTS_DIR / "dens_eeglab_integrity.csv"
@@ -98,10 +97,7 @@ def aggregate_primary_labels(labels: pd.DataFrame) -> dict[str, dict[str, int]]:
 
     for task, task_rows in labels.groupby("task"):
         counts = task_rows.groupby("label")["primary_windows"].sum().to_dict()
-        totals[str(task)] = {
-            str(label): int(count)
-            for label, count in counts.items()
-        }
+        totals[str(task)] = {str(label): int(count) for label, count in counts.items()}
 
     return totals
 
@@ -131,9 +127,7 @@ def build_summary(
             "primary_trials": int(cohort["primary_trials"].sum()),
             "all_windows": int(cohort["all_windows"].sum()),
             "primary_pass_windows": int(cohort["primary_pass_windows"].sum()),
-            "review_ablation_windows": int(
-                cohort["review_ablation_windows"].sum()
-            ),
+            "review_ablation_windows": int(cohort["review_ablation_windows"].sum()),
             "reject_windows": int(cohort["reject_windows"].sum()),
         },
         "primary_label_totals": aggregate_primary_labels(labels),

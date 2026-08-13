@@ -4,6 +4,7 @@ This audit never edits EEG or P9/P10 curation outputs. It verifies the locked
 eight-subject cohort and writes a subject-level CSV plus a machine-readable
 summary for the next split-design checkpoint.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -11,7 +12,6 @@ import json
 from pathlib import Path
 
 import pandas as pd
-
 
 LOCKED_V102_SUBJECTS = (
     "sub-mit003",
@@ -44,7 +44,10 @@ TASKS = {
 
 
 def label_counts(series: pd.Series) -> dict[str, int]:
-    return {str(label): int(count) for label, count in series.value_counts().sort_index().items()}
+    return {
+        str(label): int(count)
+        for label, count in series.value_counts().sort_index().items()
+    }
 
 
 def encode_counts(counts: dict[str, int]) -> str:
@@ -84,12 +87,16 @@ def main() -> None:
 
         checks = {
             "primary_is_pass": bool((primary_windows["status"] == "pass").all()),
-            "primary_not_excluded": bool((~primary_windows["exclude_primary"].astype(bool)).all()),
+            "primary_not_excluded": bool(
+                (~primary_windows["exclude_primary"].astype(bool)).all()
+            ),
             "unique_window_key": not windows.duplicated(
                 ["subject", "trial", "window_index"]
             ).any(),
             "trial_atomic_split_group": bool(
-                (windows.groupby(["subject", "trial"])["split_group"].nunique() == 1).all()
+                (
+                    windows.groupby(["subject", "trial"])["split_group"].nunique() == 1
+                ).all()
             ),
             "window_counts_match_trials": all(
                 int(row["pass"] + row["review"] + row["reject"])
@@ -121,7 +128,10 @@ def main() -> None:
             "primary_trials": int(len(primary_trials)),
             "primary_pass_windows": int(len(primary_windows)),
             "review_windows_retained_trial": int(
-                ((windows["status"] == "review") & ~windows["exclude_primary"].astype(bool)).sum()
+                (
+                    (windows["status"] == "review")
+                    & ~windows["exclude_primary"].astype(bool)
+                ).sum()
             ),
             "reject_windows_all": int((windows["status"] == "reject").sum()),
             "missing_trial_fif": int(len(missing_fif)),
@@ -139,9 +149,13 @@ def main() -> None:
             row[f"{task}_window_classes"] = encode_counts(window_counts)
             row[f"{task}_has_two_or_more_classes"] = len(trial_counts) >= 2
             for label, count in trial_counts.items():
-                overall_task_trials[task][label] = overall_task_trials[task].get(label, 0) + count
+                overall_task_trials[task][label] = (
+                    overall_task_trials[task].get(label, 0) + count
+                )
             for label, count in window_counts.items():
-                overall_task_windows[task][label] = overall_task_windows[task].get(label, 0) + count
+                overall_task_windows[task][label] = (
+                    overall_task_windows[task].get(label, 0) + count
+                )
 
         rows.append(row)
 
@@ -149,11 +163,15 @@ def main() -> None:
     totals = {
         "raw_integrity_subjects": len(LOCKED_V102_SUBJECTS),
         "subjects_with_primary_data": int((table["primary_trials"] > 0).sum()),
-        "subjects_with_at_least_two_primary_trials": int((table["primary_trials"] >= 2).sum()),
+        "subjects_with_at_least_two_primary_trials": int(
+            (table["primary_trials"] >= 2).sum()
+        ),
         "matched_trials": int(table["matched_trials"].sum()),
         "primary_trials": int(table["primary_trials"].sum()),
         "primary_pass_windows": int(table["primary_pass_windows"].sum()),
-        "review_windows_retained_trial": int(table["review_windows_retained_trial"].sum()),
+        "review_windows_retained_trial": int(
+            table["review_windows_retained_trial"].sum()
+        ),
         "reject_windows_all": int(table["reject_windows_all"].sum()),
     }
     task_summary = {}
@@ -179,8 +197,9 @@ def main() -> None:
         "totals": totals,
         "tasks": task_summary,
         "modeling_warning": (
-            "Eight subjects have valid raw recordings, but only seven contribute primary "
-            "data; sub-mit117 contributes one primary trial and sub-mitb2017007 contributes none."
+            "Eight subjects have valid raw recordings, but only seven contribute "
+            "primary data; sub-mit117 contributes one primary trial and "
+            "sub-mitb2017007 contributes none."
         ),
     }
 

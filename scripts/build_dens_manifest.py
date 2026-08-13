@@ -14,7 +14,6 @@ from pathlib import Path
 
 import pandas as pd
 
-
 RATING_COLUMNS = [
     "valence",
     "arousal",

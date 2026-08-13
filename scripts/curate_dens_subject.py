@@ -27,14 +27,20 @@ def quadrant_fixed5(valence: float, arousal: float, threshold: float) -> str:
     a = binary_fixed5(arousal, threshold)
     if "ambiguous" in (v, a):
         return "ambiguous"
-    return {("high", "high"): "HVHA", ("high", "low"): "HVLA",
-            ("low", "high"): "LVHA", ("low", "low"): "LVLA"}[(v, a)]
+    return {
+        ("high", "high"): "HVHA",
+        ("high", "low"): "HVLA",
+        ("low", "high"): "LVHA",
+        ("low", "low"): "LVLA",
+    }[(v, a)]
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--subject", default="sub-mit003")
-    parser.add_argument("--manifest", type=Path, default=Path("data/manifest/dens_trials.csv"))
+    parser.add_argument(
+        "--manifest", type=Path, default=Path("data/manifest/dens_trials.csv")
+    )
     parser.add_argument("--window-qc", type=Path)
     parser.add_argument("--trial-qc", type=Path)
     parser.add_argument("--output-dir", type=Path, default=Path("reports/qc"))
@@ -75,9 +81,15 @@ def main() -> None:
         quadrant_fixed5(v, a, fixed_threshold)
         for v, a in zip(label_columns["valence"], label_columns["arousal"])
     ]
-    label_columns["valence_binary_eligible_fixed5"] = label_columns["valence_label_fixed5"].ne("ambiguous")
-    label_columns["arousal_binary_eligible_fixed5"] = label_columns["arousal_label_fixed5"].ne("ambiguous")
-    label_columns["quadrant_label_eligible_fixed5"] = label_columns["quadrant_label_fixed5"].ne("ambiguous")
+    label_columns["valence_binary_eligible_fixed5"] = label_columns[
+        "valence_label_fixed5"
+    ].ne("ambiguous")
+    label_columns["arousal_binary_eligible_fixed5"] = label_columns[
+        "arousal_label_fixed5"
+    ].ne("ambiguous")
+    label_columns["quadrant_label_eligible_fixed5"] = label_columns[
+        "quadrant_label_fixed5"
+    ].ne("ambiguous")
     label_columns["label_source"] = "self_report"
     label_columns["subject_relative_label_status"] = "derive_inside_training_fold"
 
@@ -89,11 +101,15 @@ def main() -> None:
     counts = counts.reset_index()
 
     severe = trial_qc[["trial", "issues"]].copy()
-    severe["unrecoverable_integrity_error"] = severe["issues"].fillna("").str.contains(
-        "|".join(integrity_issues), regex=True
+    severe["unrecoverable_integrity_error"] = (
+        severe["issues"].fillna("").str.contains("|".join(integrity_issues), regex=True)
     )
-    trial_cur = counts.merge(severe[["trial", "unrecoverable_integrity_error"]], on="trial", how="left")
-    trial_cur["unrecoverable_integrity_error"] = trial_cur["unrecoverable_integrity_error"].fillna(False)
+    trial_cur = counts.merge(
+        severe[["trial", "unrecoverable_integrity_error"]], on="trial", how="left"
+    )
+    trial_cur["unrecoverable_integrity_error"] = trial_cur[
+        "unrecoverable_integrity_error"
+    ].fillna(False)
     trial_cur["exclude_primary"] = (
         trial_cur["pass_fraction"].lt(pass_fraction_lt)
         | trial_cur["reject_fraction"].ge(reject_fraction_gte)
@@ -115,15 +131,19 @@ def main() -> None:
     trial_cur = trial_cur.merge(label_columns, on="trial", how="left")
 
     windows = windows.merge(
-        trial_cur[["trial", "exclude_primary", "exclusion_reason"]], on="trial", how="left"
+        trial_cur[["trial", "exclude_primary", "exclusion_reason"]],
+        on="trial",
+        how="left",
     ).merge(label_columns, on="trial", how="left")
-    windows["include_primary"] = windows["status"].eq("pass") & ~windows["exclude_primary"]
+    windows["include_primary"] = (
+        windows["status"].eq("pass") & ~windows["exclude_primary"]
+    )
     windows["include_pass_review_ablation"] = windows["status"].isin(["pass", "review"])
     windows["include_pass_review_ablation"] &= ~windows["exclude_primary"]
     windows["retain_for_analysis"] = True
-    windows["include_excluded_trial_ablation"] = (
-        windows["exclude_primary"] & windows["status"].isin(["pass", "review"])
-    )
+    windows["include_excluded_trial_ablation"] = windows["exclude_primary"] & windows[
+        "status"
+    ].isin(["pass", "review"])
     windows["include_primary_valence_binary"] = (
         windows["include_primary"] & windows["valence_binary_eligible_fixed5"]
     )
@@ -166,7 +186,9 @@ def main() -> None:
             "review_windows_ablation_only": int((active["status"] == "review").sum()),
             "rejected_windows": int((active["status"] == "reject").sum()),
         },
-        "excluded_trials": [int(x) for x in trial_cur.loc[trial_cur["exclude_primary"], "trial"]],
+        "excluded_trials": [
+            int(x) for x in trial_cur.loc[trial_cur["exclude_primary"], "trial"]
+        ],
         "excluded_trial_windows_retained_for_analysis": int(len(excluded)),
         "excluded_trial_pass_review_windows_available_for_explicit_ablation": int(
             excluded["status"].isin(["pass", "review"]).sum()
@@ -189,10 +211,14 @@ def main() -> None:
             "score_gt_threshold": "high",
             "score_lt_threshold": "low",
             "score_eq_threshold": "ambiguous_excluded_for_corresponding_task",
-            "subject_relative": "ablation_only; thresholds fitted on training trials inside each fold",
+            "subject_relative": (
+                "ablation_only; thresholds fitted on training trials inside each fold"
+            ),
             "video_name_used_as_ground_truth": False,
         },
-        "split_policy": "group by trial; overlapping windows are never split independently",
+        "split_policy": (
+            "group by trial; overlapping windows are never split independently"
+        ),
         "rules_file": args.rules.as_posix(),
     }
     (qc_dir / "p10_curation_summary.json").write_text(

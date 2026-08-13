@@ -23,7 +23,9 @@ def parse_args() -> argparse.Namespace:
 def find_one(folder: Path, pattern: str) -> Path:
     matches = list(folder.glob(pattern))
     if len(matches) != 1:
-        raise RuntimeError(f"Expected one {pattern!r} in {folder}, found {len(matches)}")
+        raise RuntimeError(
+            f"Expected one {pattern!r} in {folder}, found {len(matches)}"
+        )
     return matches[0]
 
 
@@ -38,7 +40,8 @@ def main() -> None:
     events = pd.read_csv(events_path, sep="\t")
     behavior = pd.read_csv(behavior_path, sep="\t")
 
-    # DENS stores event onsets/durations as sample indices, despite BIDS expecting seconds.
+    # DENS stores event onsets/durations as sample indices, although BIDS expects
+    # seconds.
     events["onset_seconds"] = events["onset"] / raw.info["sfreq"]
     events["duration_seconds"] = events["duration"] / raw.info["sfreq"]
 
@@ -53,16 +56,26 @@ def main() -> None:
         "behavior_trials": len(behavior),
         "stimulus_events": int((events["trial_type"] == "stm").sum()),
         "event_types": events["trial_type"].value_counts().to_dict(),
-        "missing_ratings": behavior[
-            ["valence", "arousal", "dominance", "liking"]
-        ].isna().sum().to_dict(),
-        "rating_summary": behavior[
-            ["valence", "arousal", "dominance", "liking"]
-        ].describe().to_dict(),
+        "missing_ratings": behavior[["valence", "arousal", "dominance", "liking"]]
+        .isna()
+        .sum()
+        .to_dict(),
+        "rating_summary": behavior[["valence", "arousal", "dominance", "liking"]]
+        .describe()
+        .to_dict(),
         "notes": [
-            "Treat E1-E128 as EEG, E129 as misc/reference, ECG as ECG, and EMG/EMG_2 as EMG.",
-            "Do not use the Quadrant column as ground truth; derive labels from continuous ratings.",
-            "Convert events onset and duration from samples to seconds using the recording sampling frequency.",
+            (
+                "Treat E1-E128 as EEG, E129 as misc/reference, ECG as ECG, and "
+                "EMG/EMG_2 as EMG."
+            ),
+            (
+                "Do not use the Quadrant column as ground truth; derive labels "
+                "from continuous ratings."
+            ),
+            (
+                "Convert events onset and duration from samples to seconds using "
+                "the recording sampling frequency."
+            ),
         ],
     }
 
@@ -70,7 +83,9 @@ def main() -> None:
         report,
         indent=2,
         ensure_ascii=False,
-        default=lambda value: value.item() if isinstance(value, np.generic) else str(value),
+        default=lambda value: (
+            value.item() if isinstance(value, np.generic) else str(value)
+        ),
     )
     print(rendered)
     if args.output:
