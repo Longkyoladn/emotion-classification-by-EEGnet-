@@ -1,0 +1,9 @@
+subject,matched_trials,primary_trials,excluded_trials,bad_channels,ica_components,ica_removed,all_windows,primary_pass_windows,review_ablation_windows,reject_windows,retained_for_analysis
+sub-mit003,11,10,11,E50;E103,73,11,319,209,74,13,319
+sub-mit004,11,7,2;4;6;9,E1,53,,319,82,116,8,319
+sub-mit061,11,10,7,E1;E25;E121,53,,319,196,75,26,319
+sub-mit076,10,10,,,67,,290,181,97,12,290
+sub-mit117,11,1,1;2;3;4;5;6;7;9;10;11,E55;E125;E126,48,,319,9,15,19,319
+sub-mit121,11,11,,E103,88,,319,269,50,0,319
+sub-mit123,11,11,,E1;E8;E9;E14;E15;E17;E21;E22;E25;E127,40,,319,267,48,4,319
+sub-mitb2017007,11,0,1;2;3;4;5;6;7;8;9;10;11,,26,18,319,0,0,17,319

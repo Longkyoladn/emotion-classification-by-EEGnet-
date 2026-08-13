@@ -14,16 +14,18 @@ from scipy.signal import welch
 
 
 EEG = [f"E{i}" for i in range(1, 129)]
-BADS = ["E50", "E103"]
-
-
 def main() -> None:
     p = argparse.ArgumentParser()
     p.add_argument("--dataset-root", type=Path, required=True)
     p.add_argument("--manifest", type=Path, required=True)
     p.add_argument("--subject", default="sub-mit003")
     p.add_argument("--output-dir", type=Path, default=Path("reports/qc"))
+    p.add_argument("--bad-channel-decisions", type=Path)
     args = p.parse_args()
+
+    decisions_path = args.bad_channel_decisions or args.output_dir / args.subject / "p4_bad_channel_decisions.csv"
+    decisions = pd.read_csv(decisions_path)
+    bads = decisions.loc[decisions["decision"].eq("bad"), "channel"].tolist()
 
     mf = pd.read_csv(args.manifest)
     trials = mf[mf.subject.eq(args.subject) & mf.match_status.eq("matched") & mf.validation_issues.fillna("").eq("")].sort_values("event_trial_index")
@@ -41,8 +43,9 @@ def main() -> None:
         seg.notch_filter([50.], phase="zero", verbose="ERROR").filter(1.,45., phase="zero", verbose="ERROR")
         seg.crop((start-ps)/sfreq,(stop-ps-1)/sfreq,include_tmax=True)
         aux_segments.append(seg.get_data(picks=["ECG","EMG","EMG_2"]))
-        eeg = seg.copy().pick(EEG); eeg.info["bads"]=BADS
-        eeg.interpolate_bads(reset_bads=False, method={"eeg":"spline"}, verbose="ERROR")
+        eeg = seg.copy().pick(EEG); eeg.info["bads"]=bads
+        if bads:
+            eeg.interpolate_bads(reset_bads=False, method={"eeg":"spline"}, verbose="ERROR")
         eeg.set_eeg_reference("average", projection=False, verbose="ERROR")
         segments.append(eeg)
 
@@ -86,7 +89,7 @@ def main() -> None:
             ax.semilogy(f[mask],pw[mask]); ax.set(title=f"IC {idx}: {table.loc[idx,'reasons']}",xlabel="Hz",ylabel="PSD"); ax.grid(alpha=.25)
         fig.tight_layout(); fig.savefig(out/"p6_proposed_component_spectra.png",dpi=150); plt.close(fig)
 
-    report={"checkpoint":"P6","subject":args.subject,"trials":int(len(trials)),"fit_highpass_hz":1.0,"fit_lowpass_hz":45.0,"notch_hz":50.0,"ica_method":"fastica","random_state":42,"pca_variance_target":0.99,"components":int(ica.n_components_),"review_candidates":proposed,"proposal_thresholds":{"absolute_ecg_correlation":.3,"absolute_emg_correlation":.3,"high_frequency_fraction_with_absolute_kurtosis":{"high_frequency_fraction":.40,"absolute_kurtosis":15},"kurtosis_alone_is_not_a_rule":True},"ica_applied_to_eeg":False,"raw_file_unchanged":True,"operations_not_performed":["component removal","saving cleaned EEG","trial rejection","label derivation"]}
+    report={"checkpoint":"P6","subject":args.subject,"trials":int(len(trials)),"bad_channels_interpolated":bads,"fit_highpass_hz":1.0,"fit_lowpass_hz":45.0,"notch_hz":50.0,"ica_method":"fastica","random_state":42,"pca_variance_target":0.99,"components":int(ica.n_components_),"review_candidates":proposed,"proposal_thresholds":{"absolute_ecg_correlation":.3,"absolute_emg_correlation":.3,"high_frequency_fraction_with_absolute_kurtosis":{"high_frequency_fraction":.40,"absolute_kurtosis":15},"kurtosis_alone_is_not_a_rule":True},"ica_applied_to_eeg":False,"raw_file_unchanged":True,"operations_not_performed":["component removal","saving cleaned EEG","trial rejection","label derivation"]}
     (out/"p6_ica_summary.json").write_text(json.dumps(report,indent=2)+"\n",encoding="utf-8")
     print(json.dumps(report,indent=2))
 

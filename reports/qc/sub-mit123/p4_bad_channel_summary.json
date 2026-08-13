@@ -1,0 +1,58 @@
+{
+  "checkpoint": "P4",
+  "subject": "sub-mit123",
+  "trials": 11,
+  "filter": "notch 50 Hz then band-pass 0.5-45 Hz",
+  "bad": [
+    "E1",
+    "E8",
+    "E9",
+    "E14",
+    "E15",
+    "E17",
+    "E21",
+    "E22",
+    "E25",
+    "E127"
+  ],
+  "review": [
+    "E2",
+    "E3",
+    "E7",
+    "E10",
+    "E11",
+    "E16",
+    "E18",
+    "E26",
+    "E31",
+    "E32",
+    "E42",
+    "E48",
+    "E49",
+    "E55",
+    "E59",
+    "E69",
+    "E80",
+    "E87",
+    "E106",
+    "E107",
+    "E118",
+    "E119",
+    "E122",
+    "E125",
+    "E126"
+  ],
+  "pass_count": 93,
+  "decision_rule": {
+    "bad": "flagged in >=50% of valid trials and by >=2 independent metrics",
+    "review": "flagged in >=25% of valid trials or by >=2 independent metrics"
+  },
+  "raw_file_unchanged": true,
+  "operations_not_performed": [
+    "interpolation",
+    "re-referencing",
+    "ICA",
+    "trial rejection",
+    "saving filtered EEG"
+  ]
+}

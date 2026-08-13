@@ -1,0 +1,9 @@
+subject,raw_snapshot,matched_trials,primary_trials,primary_pass_windows,review_windows_retained_trial,reject_windows_all,missing_trial_fif,all_consistency_checks_pass,valence_eligible_trials,valence_trial_classes,valence_eligible_windows,valence_window_classes,valence_has_two_or_more_classes,arousal_eligible_trials,arousal_trial_classes,arousal_eligible_windows,arousal_window_classes,arousal_has_two_or_more_classes,quadrant_eligible_trials,quadrant_trial_classes,quadrant_eligible_windows,quadrant_window_classes,quadrant_has_two_or_more_classes
+sub-mit003,ds003751_v1.0.2,11,10,209,74,13,0,True,10,high:4;low:6,209,high:85;low:124,True,10,high:10,209,high:209,False,10,HVHA:4;LVHA:6,209,HVHA:85;LVHA:124,True
+sub-mit004,ds003751_v1.0.2,11,7,82,116,8,0,True,7,high:2;low:5,82,high:24;low:58,True,7,high:6;low:1,82,high:66;low:16,True,7,HVHA:2;LVHA:4;LVLA:1,82,HVHA:24;LVHA:42;LVLA:16,True
+sub-mit061,ds003751_v1.0.2,11,10,196,75,26,0,True,9,high:7;low:2,170,high:124;low:46,True,10,high:6;low:4,196,high:118;low:78,True,9,HVHA:5;HVLA:2;LVLA:2,170,HVHA:92;HVLA:32;LVLA:46,True
+sub-mit076,ds003751_v1.0.2,10,10,181,97,12,0,True,9,high:4;low:5,170,high:74;low:96,True,10,high:8;low:2,181,high:159;low:22,True,9,HVHA:4;LVHA:4;LVLA:1,170,HVHA:74;LVHA:85;LVLA:11,True
+sub-mit117,ds003751_v1.0.2,11,1,9,15,19,0,True,1,low:1,9,low:9,False,1,high:1,9,high:9,False,1,LVHA:1,9,LVHA:9,False
+sub-mit121,ds003751_v1.0.2,11,11,269,50,0,0,True,11,high:5;low:6,269,high:121;low:148,True,11,high:9;low:2,269,high:221;low:48,True,11,HVHA:5;LVHA:4;LVLA:2,269,HVHA:121;LVHA:100;LVLA:48,True
+sub-mit123,ds003751_v1.0.2,11,11,267,48,4,0,True,10,high:2;low:8,246,high:43;low:203,True,11,high:4;low:7,267,high:97;low:170,True,10,HVLA:2;LVHA:4;LVLA:4,246,HVLA:43;LVHA:97;LVLA:106,True
+sub-mitb2017007,ds003751_v1.0.2,11,0,0,0,17,0,True,0,,0,,False,0,,0,,False,0,,0,,False

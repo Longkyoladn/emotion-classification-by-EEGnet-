@@ -1,0 +1,29 @@
+{
+  "checkpoint": "P9",
+  "subject": "sub-mit117",
+  "window_seconds": 4.0,
+  "overlap_fraction": 0.5,
+  "step_seconds": 2.0,
+  "trials": 11,
+  "windows": 319,
+  "status_counts": {
+    "review": 254,
+    "pass": 46,
+    "reject": 19
+  },
+  "status_fractions": {
+    "review": 0.7962382445141066,
+    "pass": 0.14420062695924765,
+    "reject": 0.05956112852664577
+  },
+  "thresholds_inherited_from_p8": {
+    "reject_peak_uv": 1000,
+    "reject_over_200uv_fraction": 0.01,
+    "review_peak_uv": 500,
+    "review_over_200uv_fraction": 0.001,
+    "review_variance_outlier_channels": 5
+  },
+  "windows_deleted": false,
+  "labels_derived": false,
+  "data_split_created": false
+}

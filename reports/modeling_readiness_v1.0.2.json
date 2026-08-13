@@ -1,0 +1,76 @@
+{
+  "dataset": "DENS / OpenNeuro ds003751",
+  "locked_snapshot": "1.0.2",
+  "locked_subjects": [
+    "sub-mit003",
+    "sub-mit004",
+    "sub-mit061",
+    "sub-mit076",
+    "sub-mit117",
+    "sub-mit121",
+    "sub-mit123",
+    "sub-mitb2017007"
+  ],
+  "v1.0.6_used": false,
+  "all_consistency_checks_pass": true,
+  "failed_checks": [],
+  "totals": {
+    "raw_integrity_subjects": 8,
+    "subjects_with_primary_data": 7,
+    "subjects_with_at_least_two_primary_trials": 6,
+    "matched_trials": 87,
+    "primary_trials": 60,
+    "primary_pass_windows": 1213,
+    "review_windows_retained_trial": 475,
+    "reject_windows_all": 99
+  },
+  "tasks": {
+    "valence": {
+      "eligible_trials": 57,
+      "eligible_windows": 1155,
+      "trial_labels": {
+        "high": 24,
+        "low": 33
+      },
+      "window_labels": {
+        "high": 471,
+        "low": 684
+      },
+      "subjects_with_data": 7,
+      "subjects_with_two_or_more_classes": 6
+    },
+    "arousal": {
+      "eligible_trials": 60,
+      "eligible_windows": 1213,
+      "trial_labels": {
+        "high": 44,
+        "low": 16
+      },
+      "window_labels": {
+        "high": 879,
+        "low": 334
+      },
+      "subjects_with_data": 7,
+      "subjects_with_two_or_more_classes": 5
+    },
+    "quadrant": {
+      "eligible_trials": 57,
+      "eligible_windows": 1155,
+      "trial_labels": {
+        "HVHA": 20,
+        "LVHA": 23,
+        "LVLA": 10,
+        "HVLA": 4
+      },
+      "window_labels": {
+        "HVHA": 396,
+        "LVHA": 457,
+        "LVLA": 227,
+        "HVLA": 75
+      },
+      "subjects_with_data": 7,
+      "subjects_with_two_or_more_classes": 6
+    }
+  },
+  "modeling_warning": "Eight subjects have valid raw recordings, but only seven contribute primary data; sub-mit117 contributes one primary trial and sub-mitb2017007 contributes none."
+}

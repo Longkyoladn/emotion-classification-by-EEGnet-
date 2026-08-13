@@ -1,0 +1,35 @@
+{
+  "checkpoint": "P6b",
+  "subject": "sub-mit076",
+  "bad_channels": [],
+  "review_candidates": [
+    4,
+    5,
+    12,
+    14,
+    17,
+    28,
+    29,
+    39,
+    43,
+    59,
+    61
+  ],
+  "physiological_candidates": [],
+  "selected_components": [],
+  "guardrails": {
+    "minimum_aux_leakage_reduction": 0.1,
+    "maximum_relative_rms_change": 0.2,
+    "band_retention_range": [
+      0.75,
+      1.25
+    ]
+  },
+  "observed": {
+    "aux_leakage_reduction": 0.0,
+    "band_guardrail_pass": true,
+    "rms_guardrail_pass": true
+  },
+  "decision": "no_ica_component_removed",
+  "component_indices_are_subject_specific": true
+}

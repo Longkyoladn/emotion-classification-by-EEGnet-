@@ -1,0 +1,12 @@
+subject,trial,stimulus,status,issues,samples,duration_seconds,channels,max_abs_uv,extreme_over_200uv_fraction,flat_channels,variance_outlier_channels,residual_50hz_ratio,max_abs_ecg_correlation,interpolated_channels,ica_removed,output_path
+sub-mit121,1,neutral_1.mp4,pass,,15125,60.5,128,408.15811171650626,0.00012706611570247934,0,1,2.3233864211094093,0.08561209566970868,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-01_eeg.fif
+sub-mit121,2,12.m4v,pass,,15124,60.496,128,421.4486837469413,9.556416953186987e-05,0,1,3.2909606832307947,0.06512943360350804,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-02_eeg.fif
+sub-mit121,3,5.mp4,pass,,15124,60.496,128,449.6731754999779,9.14316649034647e-05,0,2,2.971140333360294,0.06788685108716914,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-03_eeg.fif
+sub-mit121,4,15.mp4,review,residual_line_noise;amplitude_warning,15124,60.496,128,520.4856447441015,0.00025931466543242527,0,4,5.519807422620726,0.08407967218921703,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-04_eeg.fif
+sub-mit121,5,24.mp4,pass,,15125,60.5,128,379.48651905981575,6.869834710743802e-05,0,3,2.249300664387065,0.1028901022605486,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-05_eeg.fif
+sub-mit121,6,neutral_2.mp4,review,amplitude_warning,15124,60.496,128,612.8346466666843,0.00033215005950806663,0,2,2.982454327956918,0.07644000307475765,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-06_eeg.fif
+sub-mit121,7,27.mp4,pass,,15125,60.5,128,373.26139496565395,0.0004896694214876033,0,4,2.056082397722157,0.07067193467899074,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-07_eeg.fif
+sub-mit121,8,3.mp4,pass,,15125,60.5,128,490.4117591381735,0.0002112603305785124,0,3,1.0753821645568116,0.09373210683926157,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-08_eeg.fif
+sub-mit121,9,2.m4v,review,amplitude_warning,15125,60.5,128,562.60750398746,0.0002618801652892562,0,3,2.513126932404398,0.09736347274377437,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-09_eeg.fif
+sub-mit121,10,16.mp4,review,amplitude_warning,15125,60.5,128,502.71241676306386,5.681818181818182e-05,0,1,1.8641515485632656,0.12658355576223493,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-10_eeg.fif
+sub-mit121,11,1.mp4,review,amplitude_warning,15129,60.516,128,540.1841537759622,0.0003051878841959151,0,4,2.635698791041434,0.10621858232142782,E103,,data/processed/sub-mit121/trials/sub-mit121_trial-11_eeg.fif

@@ -1,0 +1,41 @@
+{
+  "checkpoint": "P7_P8",
+  "subject": "sub-mit123",
+  "trials": 11,
+  "status_counts": {
+    "pass": 6,
+    "review": 4,
+    "reject": 1
+  },
+  "pipeline": [
+    "notch 50 Hz",
+    "band-pass 0.5-45 Hz",
+    "interpolate E1,E8,E9,E14,E15,E17,E21,E22,E25,E127",
+    "average reference excluding bads",
+    "remove ICA []"
+  ],
+  "bad_channels": [
+    "E1",
+    "E8",
+    "E9",
+    "E14",
+    "E15",
+    "E17",
+    "E21",
+    "E22",
+    "E25",
+    "E127"
+  ],
+  "ica_removed": [],
+  "thresholds": {
+    "reject_peak_uv": 1000,
+    "reject_extreme_over_200uv_fraction": 0.01,
+    "review_peak_uv": 500,
+    "review_extreme_fraction": 0.001,
+    "review_residual_50hz_ratio": 5,
+    "review_ecg_correlation": 0.3,
+    "review_variance_outlier_channels": 5
+  },
+  "no_trials_deleted": true,
+  "labels_derived": false
+}

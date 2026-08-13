@@ -1,0 +1,30 @@
+{
+  "checkpoint": "P7_P8",
+  "subject": "sub-mit076",
+  "trials": 10,
+  "status_counts": {
+    "reject": 5,
+    "pass": 3,
+    "review": 2
+  },
+  "pipeline": [
+    "notch 50 Hz",
+    "band-pass 0.5-45 Hz",
+    "interpolate none",
+    "average reference excluding bads",
+    "remove ICA []"
+  ],
+  "bad_channels": [],
+  "ica_removed": [],
+  "thresholds": {
+    "reject_peak_uv": 1000,
+    "reject_extreme_over_200uv_fraction": 0.01,
+    "review_peak_uv": 500,
+    "review_extreme_fraction": 0.001,
+    "review_residual_50hz_ratio": 5,
+    "review_ecg_correlation": 0.3,
+    "review_variance_outlier_channels": 5
+  },
+  "no_trials_deleted": true,
+  "labels_derived": false
+}
