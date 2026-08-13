@@ -1,0 +1,65 @@
+{
+  "signal_processing": {
+    "notch_hz": 50.0,
+    "bandpass_hz": [0.5, 45.0],
+    "filter_padding_seconds": 15.0,
+    "reference": "average",
+    "window_seconds": 4.0,
+    "window_overlap_fraction": 0.5
+  },
+  "window_qc": {
+    "reject": {
+      "nonfinite": true,
+      "max_abs_uv_gt": 1000.0,
+      "over_200uv_fraction_gt": 0.01
+    },
+    "review": {
+      "max_abs_uv_gt": 500.0,
+      "over_200uv_fraction_gt": 0.001,
+      "variance_outlier_channels_gt": 5
+    }
+  },
+  "window_usage": {
+    "pass": "primary_and_pass_plus_review_ablation",
+    "review": "pass_plus_review_ablation_only",
+    "reject": "exclude_from_all_train_validation_test_sets",
+    "delete_physical_eeg": false
+  },
+  "trial_exclusion": {
+    "pass_fraction_lt": 0.30,
+    "reject_fraction_gte": 0.20,
+    "unrecoverable_integrity_issues": [
+      "nonfinite",
+      "wrong_channel_count",
+      "too_short"
+    ],
+    "retain_excluded_trial_for_analysis_and_ablation": true
+  },
+  "labels": {
+    "ground_truth": "self_report_valence_arousal",
+    "fixed_threshold": 5.0,
+    "fixed5_role": "primary",
+    "equal_to_threshold": "ambiguous_exclude_from_corresponding_task",
+    "subject_relative_role": "ablation_only",
+    "subject_relative_threshold": "training_fold_subject_median",
+    "video_name_is_ground_truth": false
+  },
+  "splitting": {
+    "within_subject_group": "trial",
+    "cross_subject_group": "subject",
+    "overlapping_windows_may_cross_splits": false
+  },
+  "normalization": {
+    "fit_on": "training_partition_only",
+    "apply_training_statistics_to": ["validation", "test"],
+    "qc_before_normalization_in_physical_units": true
+  },
+  "subject_specific_required": {
+    "bad_channel_detection": true,
+    "bad_channel_approval": true,
+    "ica_fit": true,
+    "ica_candidate_review": true,
+    "ica_ablation": true,
+    "copy_channel_names_or_ica_indices_from_other_subject": false
+  }
+}
