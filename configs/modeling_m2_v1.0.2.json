@@ -4,6 +4,28 @@
   "primary_task": "valence_binary_fixed5",
   "subject_role": "modeling_primary",
   "index_output": "data/modeling/modeling_index_v1.0.2.csv",
+  "validation_output": "data/modeling/modeling_validation_v1.0.2.json",
+  "dataset": {
+    "tensor_unit": "volt",
+    "tensor_layout": "channels_x_time",
+    "sample_range": "zero_based_stop_exclusive_relative_to_trial_fif",
+    "sample_weight": "inverse_primary_pass_windows_per_trial"
+  },
+  "normalization": {
+    "method": "per_channel_zscore",
+    "fit_on": "training_partition_only",
+    "reuse_for": [
+      "validation",
+      "test",
+      "calibration",
+      "sensitivity_test"
+    ]
+  },
+  "evaluation": {
+    "primary_level": "trial",
+    "window_probability_aggregation": "mean",
+    "window_level_metrics": "secondary_only"
+  },
   "protocols": {
     "subject_dependent": {
       "repeats": 10,

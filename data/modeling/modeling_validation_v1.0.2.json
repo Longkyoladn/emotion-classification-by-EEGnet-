@@ -1,0 +1,109 @@
+{
+  "dataset_snapshot": "1.0.2",
+  "modeling_index": {
+    "rows": 1213,
+    "subjects": 7,
+    "trials": 60,
+    "sample_range_convention": "zero_based_stop_exclusive_relative_to_trial_fif",
+    "sample_weight_policy": "inverse_primary_pass_windows_per_trial",
+    "checks": {
+      "sample_id_unique": true,
+      "split_group_subject_trial_atomic": true,
+      "qc_status_primary_pass_only": true,
+      "sample_ranges_positive": true,
+      "sample_weight_positive": true,
+      "sample_weight_sums_to_one_per_trial": true,
+      "labels_constant_within_trial": true,
+      "all_fif_paths_exist": true,
+      "all_windows_within_fif": true,
+      "sampling_rate_consistent": true,
+      "channel_count_consistent": true,
+      "channel_order_consistent": true
+    },
+    "all_checks_pass": true,
+    "fif": {
+      "verified": true,
+      "files": 60,
+      "missing_paths": [],
+      "out_of_range_paths": [],
+      "sampling_rates_hz": [
+        250.0
+      ],
+      "channel_counts": [
+        128
+      ]
+    }
+  },
+  "splits": {
+    "common_checks": {
+      "subject_dependent_sample_ids_exist": true,
+      "cross_subject_sample_ids_exist": true,
+      "personalization_sample_ids_exist": true,
+      "sensitivity_sample_ids_exist": true
+    },
+    "protocols": {
+      "subject_dependent": {
+        "rows": 22920,
+        "checks": {
+          "trial_atomic": true,
+          "all_partitions_have_two_classes": true,
+          "each_sample_test_once_per_repeat": true,
+          "subject_relative_available": true
+        },
+        "all_checks_pass": true
+      },
+      "cross_subject": {
+        "rows": 35526,
+        "checks": {
+          "trial_atomic": true,
+          "six_outer_folds": true,
+          "five_inner_subject_folds_per_outer": true,
+          "outer_test_absent_from_inner": true,
+          "outer_refit_uses_all_five_training_subjects": true,
+          "subject_relative_forbidden": true
+        },
+        "all_checks_pass": true
+      },
+      "personalization": {
+        "rows": 130644,
+        "scenarios": 114,
+        "checks": {
+          "trial_atomic": true,
+          "calibration_has_two_trials": true,
+          "calibration_has_high_and_low": true,
+          "test_has_high_and_low": true,
+          "subject_relative_available": true
+        },
+        "all_checks_pass": true
+      },
+      "sensitivity": {
+        "rows": 1155,
+        "checks": {
+          "trial_atomic": true,
+          "sensitivity_subjects_test_only": true,
+          "primary_subjects_refit_only": true,
+          "single_class_descriptive_test": true,
+          "subject_relative_forbidden": true
+        },
+        "all_checks_pass": true
+      }
+    },
+    "all_checks_pass": true
+  },
+  "normalization_policy": {
+    "method": "per_channel_zscore",
+    "fit_on": "training_partition_only",
+    "reuse_for": [
+      "validation",
+      "test",
+      "calibration",
+      "sensitivity_test"
+    ]
+  },
+  "evaluation_policy": {
+    "primary_level": "trial",
+    "window_probability_aggregation": "mean",
+    "window_level_metrics": "secondary_only"
+  },
+  "all_checks_pass": true
+}

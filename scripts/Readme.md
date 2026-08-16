@@ -10,7 +10,8 @@ các mô hình machine learning truyền thống với EEGNet.
 > Trạng thái hiện tại: dữ liệu đã hoàn tất preprocessing và curation P1–P10.
 > M2 đã tạo modeling index và ba protocol split chính thức cho valence binary:
 > subject-dependent, nested LOSO và personalization.
-> Dataset chưa được đóng gói thành tensor/DataLoader và chưa có vòng lặp huấn luyện.
+> Modeling dataset, DataLoader và train-only normalization đã sẵn sàng; chưa có
+> mô hình hoặc vòng lặp huấn luyện.
 
 ## Phạm vi dữ liệu
 
@@ -387,11 +388,17 @@ Tổng hợp cohort và audit modeling-readiness:
 
 ### Tạo modeling index và split M2
 
-Logic modeling nằm trong `src/eeg_emotion/data/`; script dưới đây chỉ là CLI
+Logic modeling nằm trong `src/eeg_emotion/`; ba script dưới đây chỉ là CLI
 entrypoint:
 
 ```powershell
-& $PYTHON scripts\prepare_modeling_splits.py `
+& $PYTHON scripts\build_modeling_index.py `
+  --config configs\modeling_m2_v1.0.2.json
+
+& $PYTHON scripts\create_modeling_splits.py `
+  --config configs\modeling_m2_v1.0.2.json
+
+& $PYTHON scripts\validate_modeling_splits.py `
   --config configs\modeling_m2_v1.0.2.json
 ```
 
@@ -411,6 +418,23 @@ Subject-relative label chỉ xuất hiện trong manifest subject-dependent và
 personalization. Median được tính từ training trial hoặc calibration trial tương
 ứng; nested LOSO zero-shot và sensitivity không chứa subject-relative label.
 
+Modeling index chứa đường dẫn cleaned FIF và sample range 0-based, stop-exclusive
+tương đối với trial FIF. Các trường chính gồm `subject`, `trial`, `window_index`,
+`start_sample`, `stop_sample`, `fif_path`, `qc_status`, ba loại nhãn,
+`split_group` và `sample_weight`. Trọng số của mỗi window bằng nghịch đảo số
+primary-pass window trong trial, do đó tổng trọng số của mỗi trial bằng 1.
+
+`EEGWindowDataset` trong `src/eeg_emotion/data/dataset.py` đọc FIF theo nhu cầu và
+trả tensor `channels × time` trong đơn vị volt. `make_partition_dataloaders()` bắt
+buộc nhận một split đã lọc về đúng một fold/stage/scenario; hàm fit per-channel
+mean/std chỉ từ partition training rồi dùng cùng statistics cho validation/test.
+Không có bước chuẩn hóa toàn cohort trước split.
+
+Metric chính được tính ở cấp trial trong `src/eeg_emotion/evaluation/metrics.py`.
+Xác suất High của các window được lấy trung bình theo `split_group` trước khi tính
+balanced accuracy, macro-F1, confusion matrix và ROC-AUC. Metric cấp window chỉ
+được xuất như kết quả phụ.
+
 ## Phân bố nhãn primary hiện tại
 
 | Task | Eligible trial | Primary window | Phân bố trial |
@@ -424,12 +448,12 @@ Arousal binary và four-quadrant được giữ làm thí nghiệm phụ.
 
 ## Trạng thái trước khi huấn luyện
 
-Pipeline preprocessing đã hoàn tất, nhưng còn các bước modeling sau:
+Pipeline preprocessing và đóng gói modeling dataset đã hoàn tất. Các bước tiếp theo:
 
-1. Tạo Dataset/DataLoader từ các cleaned trial FIF và modeling index M2.
-2. Fit normalization chỉ trên training partition.
-3. Trích xuất band-power hoặc Riemannian feature cho baseline truyền thống.
-4. Huấn luyện và so sánh subject-dependent, LOSO và personalization.
+1. Trích xuất band-power hoặc Riemannian feature cho baseline truyền thống.
+2. Xây dựng EEGNet và vòng lặp huấn luyện dùng `sample_weight`.
+3. Huấn luyện và so sánh subject-dependent, LOSO và personalization.
+4. Aggregate xác suất window để báo cáo metric chính ở cấp trial.
 5. Chạy ablation `pass-only` với `pass + review`.
 
 Không được split ngẫu nhiên theo window vì các window overlap và các window của

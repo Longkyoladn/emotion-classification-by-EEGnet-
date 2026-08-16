@@ -92,6 +92,25 @@ def build_modeling_index(
             axis=1,
         ),
     )
+    duration_seconds = index["end_seconds"] - index["start_seconds"]
+    if (duration_seconds <= 0).any():
+        raise ValueError("Window duration must be positive")
+    sampling_rates = index["samples"] / duration_seconds
+    rounded_sampling_rates = sampling_rates.round().astype(int)
+    if not (sampling_rates - rounded_sampling_rates).abs().lt(1e-9).all():
+        raise ValueError("Window metadata does not imply an integer sampling rate")
+    index["sampling_rate_hz"] = rounded_sampling_rates
+    index["start_sample"] = (
+        index["start_seconds"] * index["sampling_rate_hz"]
+    ).round().astype(int)
+    index["stop_sample"] = index["start_sample"] + index["samples"].astype(int)
+    index["fif_path"] = index["source_path"].map(lambda value: Path(value).as_posix())
+    index["qc_status"] = index["status"]
+    index["valence_label"] = index["valence_label_fixed5"]
+    index["arousal_label"] = index["arousal_label_fixed5"]
+    index["quadrant_label"] = index["quadrant_label_fixed5"]
+    windows_per_trial = index.groupby("split_group")["sample_id"].transform("size")
+    index["sample_weight"] = 1.0 / windows_per_trial
 
     for task, (label_column, include_column) in TASK_COLUMNS.items():
         index[f"eligible_{task}"] = _as_bool(index[include_column])
@@ -105,7 +124,7 @@ def build_modeling_index(
     if not (index.groupby(["subject", "trial"])["split_group"].nunique().eq(1).all()):
         raise ValueError("A trial maps to more than one split_group")
 
-    source_paths = index["source_path"].map(lambda value: project_root / str(value))
+    source_paths = index["fif_path"].map(lambda value: project_root / str(value))
     missing_sources = [str(path) for path in source_paths.unique() if not path.exists()]
     if missing_sources:
         raise FileNotFoundError(f"Missing processed trial files: {missing_sources[:5]}")
@@ -117,10 +136,18 @@ def build_modeling_index(
         "trial",
         "split_group",
         "window_index",
+        "start_sample",
+        "stop_sample",
+        "fif_path",
+        "qc_status",
+        "valence_label",
+        "arousal_label",
+        "quadrant_label",
+        "sample_weight",
         "start_seconds",
         "end_seconds",
         "samples",
-        "source_path",
+        "sampling_rate_hz",
         "valence",
         "arousal",
         "eligible_valence_binary_fixed5",
